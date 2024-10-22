@@ -10,8 +10,10 @@ Condition, Loop, File IO
 - Xoá class: ```python qlsv.py remove_class --id 1```
 ### Thêm/Sửa/Xoá student
 ### Thêm/Sửa/Xoá teacher
-Ví dụ: ```python qlsv.py --command --parammeter```
+Ví dụ: ```python qlsv.py --command --parameter```
+
 Danh sách lớp: ```python qlsv.py list_class```
+
 Danh sách sv: ```python qlsv.py list_student --class_id 1```
 # Entity:
 ## Student:
