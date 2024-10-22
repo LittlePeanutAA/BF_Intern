@@ -5,14 +5,14 @@ Condition, Loop, File IO
 ### List students in class
 ### List teacher
 ### Thêm/Sửa/Xoá class:
-- Thêm class: python qlsv.py add_class —id 1 —class_name “Lớp K66CC”
-- Sửa class: python qlsv.py edit_class —id 1 —class_name “Lớp K66CC”
-- Xoá class: python qlsv.py remove_class —id 1
+- Thêm class: ```python qlsv.py add_class --id 1 --class_name “Lớp K66CC”```
+- Sửa class: ```python qlsv.py edit_class --id 1 --class_name “Lớp K66CC”```
+- Xoá class: ```python qlsv.py remove_class --id 1```
 ### Thêm/Sửa/Xoá student
 ### Thêm/Sửa/Xoá teacher
-Ví dụ: python qlsv.py — command — parammeter
-Danh sách lớp: python qlsv.py list_class
-Danh sách sv: python qlsv.py list_student --class_id 1
+Ví dụ: ```python qlsv.py --command --parammeter```
+Danh sách lớp: ```python qlsv.py list_class```
+Danh sách sv: ```python qlsv.py list_student --class_id 1```
 # Entity:
 ## Student:
 - ID
