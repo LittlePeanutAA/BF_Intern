@@ -5,6 +5,8 @@ letters = string.ascii_letters
 
 filename = 'OneMstudents.txt'
 header = ['ID', 'Name', 'Birthday', 'Phone Number', 'Class ID']
+id_list = list(range(1000000))
+random.shuffle(id_list)
 
 with open(filename, 'w', encoding="utf-8", newline='') as file:
     writer = csv.writer(file, delimiter='|')
@@ -15,7 +17,7 @@ with open(filename, 'w', encoding="utf-8", newline='') as file:
         phone_num = '0' + str(random.randint(123456789, 987654321))
         birthday = '2001-' + str(random.randint(1, 12)) + '-' + str(random.randint(1, 30))
 
-        data = [id, name, birthday, phone_num, class_id]
+        data = [id_list[id], name, birthday, phone_num, class_id]
         writer.writerow(data)
 
         if (id % 10000) == 0:

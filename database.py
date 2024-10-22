@@ -16,9 +16,9 @@ Ví dụ để lấy các Sinh viên thuộc class có ID = 1 sẽ gọi như sa
 dbQuery.select([‘id',’name']).where(‘class_id', 1).from(‘student').get()
 """
 
-# from save_file import *
-from BinaryTree import *
-# from binarytree import Node
+# from BinaryTree import *
+from BinarySort import *
+from MergeSort import *
 
 
 # Hàm thêm giá trị vào cây nhị phân
@@ -130,21 +130,27 @@ class DBQuery:
         và lưu lại index của nó. Khi tìm kiếm thì dùng thuật toán cây nhị phân để tìm.
     """
     def create_index(self, table_name, column_name):
+        index_arr = []
         header_dict = indexOfHeader[table_name]
         index_of_column = header_dict[column_name]
         data = self.data[table_name]
-        # Tạo cây nhị phân rỗng
-        # root = None
-        # for row in data:
-        #     root = insert(root, int(row[index_of_column]))
-        # self.indexes[column_name] = root
-        tree = BinaryTree()
+
+        # tree = BinaryTree()
+        # for row in data[:10000]:
+        #     tree.insert(int(row[index_of_column]))
+        # self.indexes[column_name] = tree
 
         import time
         start = time.time()
+
         for row in data:
-            tree.insert(int(row[index_of_column]))
-        self.indexes[column_name] = tree
+            index_arr.append([int(row[index_of_column]), row])
+        # Sử dụng Binary Sort
+        # sorted_index_arr = binary_insertion_sort(index_arr)
+        # self.indexes[column_name] = sorted_index_arr
+
+        # Sử dụng Merge Sort
+        merge_sort(index_arr)
+        self.indexes[column_name] = index_arr
 
         print("Create Index Time:", time.time() - start)
-

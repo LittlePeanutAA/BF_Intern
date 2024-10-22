@@ -43,9 +43,14 @@ def read_data(filename):
     return data
 
 
+def search_data(index_arr, test_id):
+    return index_arr[test_id][1]
+
+
 student_data = read_data('OneMstudents.txt')
 data = {'student': student_data}
 dbQuery = DBQuery(data)
 dbQuery.create_index('student', 'id')
-result = dbQuery.indexes['id'].search(test_id)
+index_arr = dbQuery.indexes['id']
+result = search_data(index_arr, test_id)
 print(result)

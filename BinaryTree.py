@@ -1,4 +1,8 @@
-"""class Node:
+import sys
+sys.setrecursionlimit(10000000)
+
+"""
+class Node:
     def __init__(self, value, data):
         self.value = value
         self.data = data
@@ -44,9 +48,6 @@ class BinaryTree:
             result.extend(self._search(value, node.right))
             return result
 """
-
-import sys
-sys.setrecursionlimit(10000000)
 
 
 class Node:
