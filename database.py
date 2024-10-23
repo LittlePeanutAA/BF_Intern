@@ -17,32 +17,8 @@ dbQuery.select([‘id',’name']).where(‘class_id', 1).from(‘student').get()
 """
 
 # from BinaryTree import *
-from BinarySort import *
+# from BinarySort import *
 from MergeSort import *
-
-
-# Hàm thêm giá trị vào cây nhị phân
-def insert(root, value):
-    if root is None:
-        return Node(value)
-    else:
-        if value < root.value:
-            root.left = insert(root.left, value)
-        else:
-            root.right = insert(root.right, value)
-    return root
-
-
-# Hàm tìm kiếm giá trị và trả về index
-def search_with_index(tree, value, index=0):
-    if tree is None:
-        return -1  # Trả về -1 nếu không tìm thấy
-    if tree.value == value:
-        return index
-    elif value < tree.value:
-        return search_with_index(tree.left, value, 2 * index + 1)
-    else:
-        return search_with_index(tree.right, value, 2 * index + 2)
 
 
 indexOfHeader = {'student': {'id': 0, 'name': 1, 'birthday': 2, 'phone_number': 3, 'class_id': 4},
@@ -144,7 +120,9 @@ class DBQuery:
         start = time.time()
 
         for row in data:
-            index_arr.append([int(row[index_of_column]), row])
+            # index_arr.append(int([row[index_of_column]), row])
+            index_arr.append([row[index_of_column], row])
+
         # Sử dụng Binary Sort
         # sorted_index_arr = binary_insertion_sort(index_arr)
         # self.indexes[column_name] = sorted_index_arr
