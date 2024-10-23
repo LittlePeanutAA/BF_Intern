@@ -56,11 +56,11 @@ test_id = '669416'
 
 # Tạo index cho cột id
 dbQuery.create_index('student', 'id')
-index_arr = dbQuery.indexes['id']
 
 # Tìm kiếm giá trị id mong muốn
 start = time.time()
-result = binary_search(index_arr, test_id)
+result = dbQuery.search('student', 'id', test_id)
+
 if result:
     print(f'Thong tin co id = {test_id} la {result} duoc tim kiem trong thoi gian {time.time() - start}')
 else:
@@ -72,11 +72,11 @@ test_class_id = '3'
 
 # Tạo index cho cột class_id
 dbQuery.create_index('student', 'class_id')
-index_arr = dbQuery.indexes['class_id']
 
 # Tìm kiếm giá trị id mong muốn
 start = time.time()
-result = binary_search_2(index_arr, test_class_id)
+result = dbQuery.search('student', 'class_id', test_class_id)
+
 if result:
     print(f'Thong tin co lop co id = {test_class_id} duoc tim kiem trong thoi gian {time.time() - start}')
     for r in result[:20]:
@@ -89,15 +89,14 @@ test_name = 'Bui Cong Duy'
 
 # Tạo index cho cột name
 dbQuery.create_index('student', 'name')
-index_arr = dbQuery.indexes['name']
 
 # Tìm kiếm giá trị id mong muốn
 start = time.time()
-result = binary_search_2(index_arr, test_name)
+result = dbQuery.search('student', 'name', test_name)
+
 if result:
     print(f'Thong tin sinh vien co ten la {test_name} duoc tim kiem trong thoi gian {time.time() - start}')
     for r in result:
         print(r)
 else:
     print('Khong tim thay sinh vien co ten ', test_name)
-    

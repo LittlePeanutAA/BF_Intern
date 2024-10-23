@@ -19,6 +19,7 @@ dbQuery.select([‘id',’name']).where(‘class_id', 1).from(‘student').get()
 # from BinaryTree import *
 # from BinarySort import *
 from MergeSort import *
+from BinarySearch import binary_search_2
 
 
 indexOfHeader = {'student': {'id': 0, 'name': 1, 'birthday': 2, 'phone_number': 3, 'class_id': 4},
@@ -129,6 +130,11 @@ class DBQuery:
 
         # Sử dụng Merge Sort
         merge_sort(index_arr)
-        self.indexes[column_name] = index_arr
+        self.indexes[table_name] = {column_name: index_arr}
 
         print("Create Index Time:", time.time() - start)
+
+    def search(self, table_name, column_name, searched_value):
+        result = binary_search_2(self.indexes[table_name][column_name], searched_value)
+
+        return result
