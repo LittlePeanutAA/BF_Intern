@@ -13,7 +13,7 @@ Constraints:
 """
 
 
-def maxUniqueSplit(s: str) -> int:
+def maxUniqueSplit(s):
     """
     Nhận vào một chuỗi s và trả về số lượng tối đa các chuỗi con duy nhất mà chuỗi này có thể được chia thành.
     Các chuỗi con phải liên tiếp và không được trùng lặp.
@@ -21,7 +21,7 @@ def maxUniqueSplit(s: str) -> int:
     :return: int - số lượng chuỗi con tối đa
     """
 
-    def backtrack(start: int, seen: set) -> int:
+    def backtrack(start, seen):
         """
         Hàm đệ quy được sử dụng để tìm kiếm các chuỗi con duy nhất
         :param start: int - Điểm bắt đầu xét chuỗi con tiếp theo
