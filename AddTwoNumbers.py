@@ -29,7 +29,7 @@ def addTwoNumbers(number1, number2):
         smaller_num = number2
     else:
         bigger_num = number2
-        smaller_num = number
+        smaller_num = number1
     length = max(len(number1), len(number2))
     s_length = min(len(number1), len(number2))
 
