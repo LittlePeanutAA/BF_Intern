@@ -62,7 +62,7 @@ def maxUniqueSplit(s):
     return backtrack(0, set())
 
 
-# Ví dụ sử dụng
-# s = "ababccc"
-s = 'abcd'
+# Test
+s = "ababccc"
+
 print(maxUniqueSplit(s))  # Kết quả: 5
