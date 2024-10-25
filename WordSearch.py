@@ -75,6 +75,5 @@ board = [
     ['A', 'Y', 'G', 'D']
 ]
 word = "ABGYA"     # Kết quả: True
-road = []
 
 print(exist(board, word))
