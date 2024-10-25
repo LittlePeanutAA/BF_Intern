@@ -23,30 +23,33 @@ def addTwoNumbers(number1, number2):
     """
 
     bonus = 0  # Nhớ của phép cộng
-    resultNum = []
+    result_num = []
+    if len(number1) >= len(number2):
+        bigger_num = number1
+        smaller_num = number2
+    else:
+        bigger_num = number2
+        smaller_num = number
     length = max(len(number1), len(number2))
+    s_length = min(len(number1), len(number2))
 
     for index in range(length):
-
-        try:
-            add2digit = number1[index] + number2[index] + bonus
-        except:
-            try:
-                add2digit = number1[index] + bonus
-            except:
-                add2digit = number2[index] + bonus
+        if index < s_length:
+            add2digit = bigger_num[index] + smaller_num[index] + bonus
+        else:
+            add2digit = bigger_num[index] + bonus
 
         if add2digit > 9:   # Cộng có nhớ
             bonus = 1
-            resultNum.append(add2digit - 10)
+            result_num.append(add2digit - 10)
             if index == length - 1:     # Khi cộng đến số cuối mà vẫn còn nhớ
-                resultNum.append(1)
-                return resultNum
+                result_num.append(1)
+                return result_num
         else:               # Cộng không có nhớ
             bonus = 0
-            resultNum.append(add2digit)
+            result_num.append(add2digit)
 
-    return resultNum
+    return result_num
 
 
 l1 = [9, 9, 9, 9, 9, 9, 9]
