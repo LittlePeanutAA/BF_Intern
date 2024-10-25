@@ -49,7 +49,6 @@ def maxUniqueSplit(s):
                 max_count = max(max_count, 1 + backtrack(end, seen))
 
                 # print(seen)
-                print(substring)
 
                 """
                 Sau khi đệ quy trở về, ta loại bỏ chuỗi con từ tập hợp seen để đảm bảo rằng
