@@ -48,7 +48,7 @@ def maxUniqueSplit(s):
                 """
                 max_count = max(max_count, 1 + backtrack(end, seen))
 
-                # print(seen)
+                split_s.append(seen.copy())
 
                 """
                 Sau khi đệ quy trở về, ta loại bỏ chuỗi con từ tập hợp seen để đảm bảo rằng
@@ -62,7 +62,19 @@ def maxUniqueSplit(s):
     return backtrack(0, set())
 
 
-# Test
+# Ví dụ sử dụng
 s = "ababccc"
+# s = 'abcd'
 
-print(maxUniqueSplit(s))  # Kết quả: 5
+split_s = []
+
+max_split = maxUniqueSplit(s)
+
+print('So lượng split tối đa là: ', max_split)  # Kết quả: 5
+
+# Lấy những set có độ dài bằng max_split:
+max_split_s = [sub_s for sub_s in split_s if len(sub_s) == max_split]
+unique_max_split_s = list(map(frozenset, max_split_s))
+unique_max_split_s = set(unique_max_split_s)
+for sub_s in unique_max_split_s:
+    print(set(sub_s))
