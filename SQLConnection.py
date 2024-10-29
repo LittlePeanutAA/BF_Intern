@@ -5,7 +5,15 @@ import os
 
 
 def createConnection(host_name, user_name, user_password, db_name):
-    """Tạo kết nối đến cơ sở dữ liệu MySQL."""
+    """
+    Tạo kết nối đến cơ sở dữ liệu MySQL.
+    Nếu kết nối thanh công, lưu tham số vào file .json
+    :param host_name: host local
+    :param user_name: username
+    :param user_password: password
+    :param db_name: name of database
+    :return: None
+    """
     connection = None
     try:
         connection = mysql.connector.connect(
@@ -27,11 +35,16 @@ def createConnection(host_name, user_name, user_password, db_name):
 
     except Error as e:
         print(f"Lỗi '{e}' xảy ra khi kết nối đến MySQL")
-    return connection
 
 
 def readDataFromTable(connection, table_name, id=None):
-    """Đọc dữ liệu từ bảng"""
+    """
+    Đọc dữ liệu từ bảng
+    :param connection: connection duoc chay từ các thông tin đã lưu trong file .json
+    :param table_name: tên bảng
+    :param id: id của class cho bảng student
+    :return: None
+    """
     cursor = connection.cursor()
     if table_name == 'student':
         cursor.execute(f"SELECT * FROM {table_name} WHERE class_id = {id}")
@@ -44,7 +57,13 @@ def readDataFromTable(connection, table_name, id=None):
 
 
 def insertDataToTable(connection, table_name, data_tuple):
-    """Insert du lieu trong bang"""
+    """
+    Insert du lieu trong bang
+    :param connection: connection duoc chay từ các thông tin đã lưu trong file .json
+    :param table_name: tên bảng
+    :param data_tuple: tuple chứa thông tin cập nhật được lưu theo đúng thứ tự
+    :return: None
+    """
     cursor = connection.cursor()
     query = f"INSERT INTO {table_name} VALUES {data_tuple}"
     cursor.execute(query)
@@ -53,7 +72,13 @@ def insertDataToTable(connection, table_name, data_tuple):
 
 
 def updateDataToTable(connection, table_name, data_tuple):
-    """Update du lieu trong bang"""
+    """
+    Update du lieu trong bang
+    :param connection: connection duoc chay từ các thông tin đã lưu trong file .json
+    :param table_name: tên bảng
+    :param data_tuple: tuple chứa thông tin cập nhật được lưu theo đúng thứ tự
+    :return: None
+    """
     cursor = connection.cursor()
     if table_name == 'class':
         query = f"UPDATE {table_name} SET name = %s WHERE id = {data_tuple[0]}"
@@ -71,7 +96,13 @@ def updateDataToTable(connection, table_name, data_tuple):
 
 
 def deleteDataToTable(connection, table_name, id):
-    """Delete du lieu trong bang"""
+    """
+    Delete du lieu trong bang
+    :param connection: connection duoc chay từ các thông tin đã lưu trong file .json
+    :param table_name: tên bảng
+    :param id: id của dữ liệu cần xoá
+    :return: None
+    """
     cursor = connection.cursor()
     query = f"DELETE FROM {table_name} WHERE id = {id}"
     cursor.execute(query)

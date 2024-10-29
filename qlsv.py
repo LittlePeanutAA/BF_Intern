@@ -94,15 +94,12 @@ if os.path.exists('connection_info.json'):
                 )
 else:
     connection = None
-# connection = createConnection('127.0.0.1', 'root', 'npcR5P8cw93IDHhe', 'qlsv')
+# connection = createConnection('127.0.0.1', 'root', 'Anhduy', 'qlsv')
 
 if args.command == 'connect_sql':
     # Kết nốt với MySQL
     host_name, user_name, user_password, db_name = args.localhost, args.username, args.password, args.database
-    connection = createConnection(host_name, user_name, user_password, db_name)
-    print(connection)
-    # with open('connection.json', 'w') as file:
-    #     json.dump(connection, file)
+    createConnection(host_name, user_name, user_password, db_name)
 
 elif args.command == 'list_class':
     # Hiển thị danh sách lớp
@@ -200,6 +197,6 @@ elif args.command == 'remove_teacher':
 elif args.command == 'disconnect_sql':
     # Ngắt ket noi voi MySQL
     if os.path.exists('connection_info.json'):
-        os.remove('connection_info.json')
+        os.remove('connection_info.json') # xoá file .json
     else:
         print('Chua ket noi den MySQL')
