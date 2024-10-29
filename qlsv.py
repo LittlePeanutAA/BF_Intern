@@ -2,6 +2,7 @@ import argparse
 
 from SQLConnection import *
 
+
 # Tạo parser
 parser = argparse.ArgumentParser(description='Ứng dụng Quản lý Sinh viên')
 subparsers = parser.add_subparsers(dest='command', help='Lệnh')
@@ -83,120 +84,100 @@ remove_teacher_parser.add_argument('--id', type=int, required=True, help='ID gi�
 
 # Xử lý lệnh
 args = parser.parse_args()
-if os.path.exists('connection_info.json'):
-    with open('connection_info.json', 'r') as file:
-        connection_info = json.load(file)
-    connection = mysql.connector.connect(
-                    host=connection_info['host'],
-                    user=connection_info['user'],
-                    password=connection_info['password'],
-                    database=connection_info['database']
-                )
-else:
-    connection = None
-# connection = createConnection('127.0.0.1', 'root', 'Anhduy', 'qlsv')
 
 if args.command == 'connect_sql':
-    # Kết nốt với MySQL
-    host_name, user_name, user_password, db_name = args.localhost, args.username, args.password, args.database
-    createConnection(host_name, user_name, user_password, db_name)
+    # Lưu thông tin kết nối lại
+    try:
+        # Kiểm tra tính chính xác của thông tin kết nối
+        mysql.connector.connect(
+            host=args.localhost,
+            user=args.username,
+            password=args.password,
+            database=args.database
+        )
+        # Lưu thông tin kết nối vào file .json
+        connection_info = {
+            'host': args.localhost,
+            'user': args.username,
+            'password': args.password,
+            'database': args.database
+        }
+        print('Kết nối thành công đến MySQL.')
+        with open('connection_info.json', 'w') as file:
+            json.dump(connection_info, file)
 
-elif args.command == 'list_class':
-    # Hiển thị danh sách lớp
-    if not connection:
-        print('Chưa kết nối đến MySQL')
-    else:
-        readDataFromTable(connection, 'class')
+    except Error as e:
+        print(f"Lỗi '{e}' xảy ra khi kết nối đến MySQL")
 
-elif args.command == 'list_student':
-    # Hiển thị danh sách sinh viên theo lớp
-    if not connection:
-        print('Chưa kết nối đến MySQL')
-    else:
+# Kiểm tra sự tồn tại của file connection_info.json
+if not os.path.exists('connection_info.json'):
+    print('Chưa kết nối đến MySQL')
+else:
+    # Lấy dữ liệu kết nô bên trong file .json
+    with open('connection_info.json', 'r') as file:
+        connection_info = json.load(file)
+        host_name, user_name, user_password, db_name = connection_info.values()
+
+    # Tạo object SQLConnection
+    sql_connection = SQLConnection(host_name, user_name, user_password, db_name)
+    # ('127.0.0.1', 'root', '*********', 'qlsv')
+
+    if args.command == 'list_class':
+        # Hiển thị danh sách lớp
+        sql_connection.readDataFromTable('class')
+
+    elif args.command == 'list_student':
+        # Hiển thị danh sách sinh viên theo lớp
         class_id = args.class_id
-        readDataFromTable(connection, 'student', class_id)
+        sql_connection.readDataFromTable('student', class_id)
 
-elif args.command == 'list_teacher':
-    # Hiển thị danh sách giáo viên
-    if not connection:
-        print('Chưa kết nối đến MySQL')
-    else:
-        readDataFromTable(connection, 'teacher')
+    elif args.command == 'list_teacher':
+        # Hiển thị danh sách giáo viên
+        sql_connection.readDataFromTable('teacher')
 
-elif args.command == 'add_class':
-    # Thêm lớp mới
-    new_class = Class(str(args.id), args.class_name)
-    data = (new_class.id, new_class.name)
-    if not connection:
-        print('Chưa kết nối đến MySQL')
-    else:
-        insertDataToTable(connection, 'class', data)
+    elif args.command == 'add_class':
+        # Thêm lớp mới
+        data = (args.id, args.class_name)
+        sql_connection.insertDataToTable('class', data)
 
-elif args.command == 'edit_class':
-    # Sửa lớp
-    update_data = (args.id, args.class_name)
-    if not connection:
-        print('Chưa kết nối đến MySQL')
-    else:
-        updateDataToTable(connection, 'class', update_data)
+    elif args.command == 'edit_class':
+        # Sửa lớp
+        update_data = (args.id, args.class_name)
+        sql_connection.updateDataToTable('class', update_data)
 
+    elif args.command == 'remove_class':
+        # Xoá lớp
+        sql_connection.deleteDataToTable('class', args.id)
 
-elif args.command == 'remove_class':
-    # Xoá lớp
-    if not connection:
-        print('Chưa kết nối đến MySQL')
-    else:
-        deleteDataToTable(connection, 'class', args.id)
+    elif args.command == 'add_student':
+        # Thêm sinh viên
+        data = (args.id, args.name, args.birthday, args.phone_number, args.class_id)
+        sql_connection.insertDataToTable('student', data)
 
-elif args.command == 'add_student':
-    # Thêm sinh viên
-    data = (args.id, args.name, args.birthday, args.phone_number, args.class_id)
-    if not connection:
-        print('Chưa kết nối đến MySQL')
-    else:
-        insertDataToTable(connection, 'student', data)
+    elif args.command == 'edit_student':
+        # Sửa sinh viên
+        update_data = (args.id, args.name, args.birthday, args.phone_number, args.class_id)
+        sql_connection.updateDataToTable('student', update_data)
 
-elif args.command == 'edit_student':
-    # Sửa sinh viên
-    update_data = (args.id, args.name, args.birthday, args.phone_number, args.class_id)
-    if not connection:
-        print('Chưa kết nối đến MySQL')
-    else:
-        updateDataToTable(connection, 'student', update_data)
+    elif args.command == 'remove_student':
+        # Xoá sinh viên
+        sql_connection.deleteDataToTable('student', args.id)
 
-elif args.command == 'remove_student':
-    # Xoá sinh viên
-    if not connection:
-        print('Chưa kết nối đến MySQL')
-    else:
-        deleteDataToTable(connection, 'student', args.id)
+    elif args.command == 'add_teacher':
+        # Thêm giáo viên
+        data = (args.id, args.name, args.birthday, args.phone_number, args.head_of_class)
+        sql_connection.insertDataToTable('teacher', data)
 
-elif args.command == 'add_teacher':
-    # Thêm giáo viên
-    data = (args.id, args.name, args.birthday, args.phone_number, args.head_of_class)
-    if not connection:
-        print('Chưa kết nối đến MySQL')
-    else:
-        insertDataToTable(connection, 'teacher', data)
+    elif args.command == 'edit_teacher':
+        # Sửa giáo viên
+        update_data = (args.id, args.name, args.birthday, args.phone_number, args.head_of_class)
+        sql_connection.updateDataToTable('teacher', update_data)
 
-elif args.command == 'edit_teacher':
-    # Sửa giáo viên
-    update_data = (args.id, args.name, args.birthday, args.phone_number, args.head_of_class)
-    if not connection:
-        print('Chưa kết nối đến MySQL')
-    else:
-        updateDataToTable(connection, 'teacher', update_data)
+    elif args.command == 'remove_teacher':
+        # Xoá giáo viên
+        sql_connection.deleteDataToTable('teacher', args.id)
 
-elif args.command == 'remove_teacher':
-    # Xoá giáo viên
-    if not connection:
-        print('Chưa kết nối đến MySQL')
-    else:
-        deleteDataToTable(connection, 'teacher', args.id)
-
-elif args.command == 'disconnect_sql':
-    # Ngắt ket noi voi MySQL
-    if os.path.exists('connection_info.json'):
-        os.remove('connection_info.json') # xoá file .json
-    else:
-        print('Chua ket noi den MySQL')
+    elif args.command == 'disconnect_sql':
+        # Ngắt ket noi voi MySQL
+        os.remove('connection_info.json')   # xoá file .json
+        print('Đã ngắt kết nối đến MySQL.')
