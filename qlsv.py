@@ -144,7 +144,6 @@ elif args.command == 'disconnect_sql':
 else:
     # Nếu yêu cầu làm việc với MySQL
     if args.command and args.useSQL:
-        print(1)
         # Kiểm tra sự tồn tại của file connection_info.json
         if not os.path.exists('connection_info.json'):
             print('Chưa kết nối đến MySQL')
