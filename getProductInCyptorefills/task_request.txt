@@ -1,0 +1,4 @@
+Each coin and each network has a different wallet address.
+Above is a sample file demo for just 1 product,
+in which each coin and each network has just 1 wallet address accordingly.
+But this task requires 5 wallet addresses for each of them, if possible.
