@@ -1,0 +1,2 @@
+ID|Name|Birthday|Phone Number|Class ID
+1797|Bui Cong Duy|2001-07-22|0372642462|2
