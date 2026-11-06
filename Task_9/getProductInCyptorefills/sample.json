@@ -1,0 +1,96 @@
+{
+  "Vietnam": {
+    "type": "Games",
+    "name": "Mobile Legends",
+    "title": "Mobile Legends gift card",
+    "delivery": "Instant delivery",
+    "area_redeem": "May only be redeemable in Vietnam",
+    "content": "Buy Mobile Legends gift cards with Bitcoin and other Crypto. Buy this Mobile Legends Diamonds Code and top up your ML account. Defeat your opponents in style with extra virtual content like skins, rewards, passes and even new heroes. Get your code instantly by email and redeem it in seconds. Just grab some extra Mobile Legends Diamonds and strike fear in your enemies, no matter which path you choose!",
+    "img": "https://img.cryptorefills.com/logos_v2/mobile-legends.webp",
+    "BTC": {
+      "items": [
+        {
+          "value": "56 Diamonds",
+          "price": "0.00001162\nBTC",
+          "point_plus": "1"
+        },
+        {
+          "value": "6012 Diamonds",
+          "price": "0.00103140\nBTC",
+          "point_plus": "93"
+        }
+      ],
+      "wallet_address": {
+        "Mainnet": "3P5GWWcm1o9PQWgeDdgBVgcKaNN26sucKD"
+      }
+    },
+    "USDC": {
+      "items": [
+        {
+          "value": "56 Diamonds",
+          "price": "1.10\nUSDC",
+          "point_plus": "1"
+        },
+        {
+          "value": "6012 Diamonds",
+          "price": "97.31\nUSDC",
+          "point_plus": "93"
+        }
+      ],
+      "wallet_address": {
+        "Mainnet": "38NB5Vo2spYKMPnRpF4tpWHKdmZjFBq1mo"
+      }
+    },
+    "USDT": {
+      "items": [
+        {
+          "value": "56 Diamonds",
+          "price": "1.10\nUSDT",
+          "point_plus": "1"
+        },
+        {
+          "value": "6012 Diamonds",
+          "price": "97.28\nUSDT",
+          "point_plus": "93"
+        }
+      ],
+      "wallet_address": {
+        "Mainnet": "3CUHpMQTqUZjYQncs725smYyZTyvVusKPQ"
+      }
+    },
+    "ETH": {
+      "items": [
+        {
+          "value": "56 Diamonds",
+          "price": "0.00032061\nETH",
+          "point_plus": "1"
+        },
+        {
+          "value": "6012 Diamonds",
+          "price": "0.02845171\nETH",
+          "point_plus": "93"
+        }
+      ],
+      "wallet_address": {
+        "Mainnet": "36QLdYMgU9wacHHZ6qQXpUXnmGuSP5DMsq"
+      }
+    },
+    "LTC": {
+      "items": [
+        {
+          "value": "56 Diamonds",
+          "price": "0.01164790\nLTC",
+          "point_plus": "1"
+        },
+        {
+          "value": "6012 Diamonds",
+          "price": "1.03366926\nLTC",
+          "point_plus": "93"
+        }
+      ],
+      "wallet_address": {
+        "Mainnet": "39Ep8kjmZbBT7vsUaBY6TNdXYvAEKGTYy5"
+      }
+    }
+  }
+}
