@@ -1,0 +1,2392 @@
+{
+  "scraped_at": "2026-11-06T22:50:16+00:00",
+  "note": "Giá theo coin là giá ước tính tại thời điểm crawl, tính theo tỉ giá lúc đó.",
+  "countries": {
+    "aland_islands": [
+      {
+        "url": "https://www.cryptorefills.com/en/aland_islands/gift_cards/blizzard",
+        "country": "Åland Islands",
+        "category": "Games",
+        "name": "Blizzard",
+        "title": "Blizzard gift card",
+        "description": "Buy Blizzard gift cards in Aland Islands with Bitcoin and crypto. Instant delivery. Buy with just an email. No account needed.",
+        "image": "https://www.cryptorefills.com/opengraph-image?locale=en&country=ax&kind=Gift%20Cards&brand=Blizzard",
+        "redeem_area": "May only be redeemable in Åland Islands",
+        "in_stock": false,
+        "prices": {}
+      },
+      {
+        "url": "https://www.cryptorefills.com/en/aland_islands/gift_cards/bol.com",
+        "country": "Åland Islands",
+        "category": "Ecommerce",
+        "name": "Bol.com",
+        "title": "Bol.com EUR gift card",
+        "description": "bol.com is Europe's largest online marketplace with millions of products across electronics, books, fashion, toys, home goods, and sports, serving 19 countries.",
+        "image": "https://cdn.cryptorefills.com/logos_v2/bol-com.webp",
+        "redeem_area": "May only be redeemable in Åland Islands",
+        "in_stock": true,
+        "prices": {
+          "BTC": [
+            {
+              "value": "€5",
+              "price": 7.832e-05
+            },
+            {
+              "value": "€10",
+              "price": 0.00015505
+            },
+            {
+              "value": "€20",
+              "price": 0.00030818
+            },
+            {
+              "value": "€25",
+              "price": 0.00038491
+            },
+            {
+              "value": "€50",
+              "price": 0.00076824
+            },
+            {
+              "value": "€100",
+              "price": 0.00153489
+            }
+          ],
+          "ETH": [
+            {
+              "value": "€5",
+              "price": 0.00265856
+            },
+            {
+              "value": "€10",
+              "price": 0.00526322
+            },
+            {
+              "value": "€20",
+              "price": 0.01046175
+            },
+            {
+              "value": "€25",
+              "price": 0.01306641
+            },
+            {
+              "value": "€50",
+              "price": 0.02607887
+            },
+            {
+              "value": "€100",
+              "price": 0.05210385
+            }
+          ],
+          "USDT": [
+            {
+              "value": "€5",
+              "price": 5.95
+            },
+            {
+              "value": "€10",
+              "price": 11.79
+            },
+            {
+              "value": "€20",
+              "price": 23.43
+            },
+            {
+              "value": "€25",
+              "price": 29.27
+            },
+            {
+              "value": "€50",
+              "price": 58.41
+            },
+            {
+              "value": "€100",
+              "price": 116.7
+            }
+          ],
+          "USDC": [
+            {
+              "value": "€5",
+              "price": 5.95
+            },
+            {
+              "value": "€10",
+              "price": 11.77
+            },
+            {
+              "value": "€20",
+              "price": 23.4
+            },
+            {
+              "value": "€25",
+              "price": 29.23
+            },
+            {
+              "value": "€50",
+              "price": 58.34
+            },
+            {
+              "value": "€100",
+              "price": 116.57
+            }
+          ],
+          "LTC": [
+            {
+              "value": "€5",
+              "price": 0.11296275
+            },
+            {
+              "value": "€10",
+              "price": 0.22363521
+            },
+            {
+              "value": "€20",
+              "price": 0.44452167
+            },
+            {
+              "value": "€25",
+              "price": 0.5551941
+            },
+            {
+              "value": "€50",
+              "price": 1.10809584
+            },
+            {
+              "value": "€100",
+              "price": 2.21390135
+            }
+          ]
+        }
+      },
+      {
+        "url": "https://www.cryptorefills.com/en/aland_islands/gift_cards/c%26a",
+        "country": "Åland Islands",
+        "category": "Apparel & clothing",
+        "name": "C&A",
+        "title": "C&A gift card",
+        "description": "Buy C&a gift cards in Aland Islands with Bitcoin and crypto. Instant delivery. Buy with just an email. No account needed.",
+        "image": "https://www.cryptorefills.com/opengraph-image?locale=en&country=ax&kind=Gift%20Cards&brand=C&a",
+        "redeem_area": "May only be redeemable in {country}",
+        "in_stock": false,
+        "prices": {}
+      },
+      {
+        "url": "https://www.cryptorefills.com/en/aland_islands/gift_cards/free_fire",
+        "country": "Åland Islands",
+        "category": "Games",
+        "name": "Free Fire",
+        "title": "Free Fire USD gift card",
+        "description": "Free Fire is the ultimate survival shooter game available on mobile. Each 10-minute game places you on a remote island where you are pit against 49 other players, all seeking survival. Players freely choose their starting point with their parachute, and aim to stay in the safe zone for as long as possible. Drive vehicles to explore the vast map, hide in trenches, or become invisible by proning under grass. Ambush, snipe, survive, there is only one goal: to survive and answer the call of duty.Free Fire Diamonds are the in-game currency of Free Fire, with players requiring these Diamonds to purchase items likes weapon skins, emotes and characters.&nbsp;",
+        "image": "https://cdn.cryptorefills.com/logos_v2/free-fire.webp",
+        "redeem_area": "May only be redeemable in Åland Islands",
+        "in_stock": true,
+        "prices": {
+          "BTC": [
+            {
+              "value": "$1",
+              "price": 1.539e-05
+            },
+            {
+              "value": "$2",
+              "price": 2.932e-05
+            },
+            {
+              "value": "$5",
+              "price": 7.112e-05
+            },
+            {
+              "value": "$10",
+              "price": 0.00014063
+            },
+            {
+              "value": "$20",
+              "price": 0.00027964
+            }
+          ],
+          "ETH": [
+            {
+              "value": "$1",
+              "price": 0.00052196
+            },
+            {
+              "value": "$2",
+              "price": 0.00099448
+            },
+            {
+              "value": "$5",
+              "price": 0.00241202
+            },
+            {
+              "value": "$10",
+              "price": 0.0047691
+            },
+            {
+              "value": "$20",
+              "price": 0.00948325
+            }
+          ],
+          "USDT": [
+            {
+              "value": "$1",
+              "price": 1.17
+            },
+            {
+              "value": "$2",
+              "price": 2.23
+            },
+            {
+              "value": "$5",
+              "price": 5.4
+            },
+            {
+              "value": "$10",
+              "price": 10.68
+            },
+            {
+              "value": "$20",
+              "price": 21.24
+            }
+          ],
+          "USDC": [
+            {
+              "value": "$1",
+              "price": 1.17
+            },
+            {
+              "value": "$2",
+              "price": 2.23
+            },
+            {
+              "value": "$5",
+              "price": 5.4
+            },
+            {
+              "value": "$10",
+              "price": 10.67
+            },
+            {
+              "value": "$20",
+              "price": 21.22
+            }
+          ],
+          "LTC": [
+            {
+              "value": "$1",
+              "price": 0.02217776
+            },
+            {
+              "value": "$2",
+              "price": 0.04225448
+            },
+            {
+              "value": "$5",
+              "price": 0.10248461
+            },
+            {
+              "value": "$10",
+              "price": 0.20263473
+            },
+            {
+              "value": "$20",
+              "price": 0.40293494
+            }
+          ]
+        }
+      },
+      {
+        "url": "https://www.cryptorefills.com/en/aland_islands/gift_cards/mobile_legends",
+        "country": "Åland Islands",
+        "category": "Games",
+        "name": "Mobile Legends",
+        "title": "Mobile Legends gift card",
+        "description": "Buy Mobile Legends gift cards in Aland Islands with Bitcoin and crypto. Instant delivery. Buy with just an email. No account needed.",
+        "image": "https://www.cryptorefills.com/opengraph-image?locale=en&country=ax&kind=Gift%20Cards&brand=Mobile%20Legends",
+        "redeem_area": "May only be redeemable in Åland Islands",
+        "in_stock": false,
+        "prices": {}
+      },
+      {
+        "url": "https://www.cryptorefills.com/en/aland_islands/gift_cards/netflix",
+        "country": "Åland Islands",
+        "category": "Streaming",
+        "name": "Netflix",
+        "title": "Netflix EUR gift card",
+        "description": "Watch Netflix movies &amp; TV shows online or stream right to your smart TV, game console, PC, Mac, mobile, tablet and more.",
+        "image": "https://cdn.cryptorefills.com/logos_v2/netflix.webp",
+        "redeem_area": "May only be redeemable in Åland Islands",
+        "in_stock": true,
+        "prices": {
+          "BTC": [
+            {
+              "value": "€75",
+              "price": 0.00119069
+            }
+          ],
+          "ETH": [
+            {
+              "value": "€75",
+              "price": 0.0403795
+            }
+          ],
+          "USDT": [
+            {
+              "value": "€75",
+              "price": 90.45
+            }
+          ],
+          "USDC": [
+            {
+              "value": "€75",
+              "price": 90.35
+            }
+          ],
+          "LTC": [
+            {
+              "value": "€75",
+              "price": 1.71568879
+            }
+          ]
+        }
+      },
+      {
+        "url": "https://www.cryptorefills.com/en/aland_islands/gift_cards/nordvpn",
+        "country": "Åland Islands",
+        "category": "Electronics",
+        "name": "NordVPN",
+        "title": "NordVPN USD gift card",
+        "description": "NordVPN’s Threat Protection feature scans your downloaded files for malware and blocks trackers, ads, and dangerous websites. Experience the internet without intrusive tracking or censorship. Stay secure on Wi-Fi networks and stop your mobile apps from leaking unencrypted data. Get it all with just the click of a button.Threat ProtectionBlock dangerous websitesSecure your connection on Wi-Fi networksThe fastest VPN on the planet",
+        "image": "https://cdn.cryptorefills.com/logos_v2/nord-vpn.webp",
+        "redeem_area": "May only be redeemable in Åland Islands",
+        "in_stock": true,
+        "prices": {
+          "BTC": [
+            {
+              "value": "$59.99",
+              "price": 0.00082703
+            },
+            {
+              "value": "$78.99",
+              "price": 0.00109408
+            }
+          ],
+          "ETH": [
+            {
+              "value": "$59.99",
+              "price": 0.02804682
+            },
+            {
+              "value": "$78.99",
+              "price": 0.03710341
+            }
+          ],
+          "USDT": [
+            {
+              "value": "$59.99",
+              "price": 62.83
+            },
+            {
+              "value": "$78.99",
+              "price": 83.11
+            }
+          ],
+          "USDC": [
+            {
+              "value": "$59.99",
+              "price": 62.75
+            },
+            {
+              "value": "$78.99",
+              "price": 83.02
+            }
+          ],
+          "LTC": [
+            {
+              "value": "$59.99",
+              "price": 1.19168439
+            },
+            {
+              "value": "$78.99",
+              "price": 1.57649082
+            }
+          ]
+        }
+      },
+      {
+        "url": "https://www.cryptorefills.com/en/aland_islands/gift_cards/pubg_mobile",
+        "country": "Åland Islands",
+        "category": "Games",
+        "name": "PUBG Mobile",
+        "title": "PUBG Mobile gift card",
+        "description": "Use this PUBG Mobile UC gift code to gain your UC of Unknown Cash. It’s perfect for anyone who doesn't want to use their credit card for in-game top-ups or in-app purchases. Simply select the amount of UC you would like and choose from one of our 78 secure payment options to complete your purchase. Your code will arrive within seconds via email! Just receive it, redeem it and get ready for battle royale!",
+        "image": "https://cdn.cryptorefills.com/logos_v2/pubg.webp",
+        "redeem_area": "May only be redeemable in Åland Islands",
+        "in_stock": true,
+        "prices": {
+          "BTC": [
+            {
+              "value": "60 UC",
+              "price": 1.654e-05
+            },
+            {
+              "value": "300 + 25 UC",
+              "price": 7.562e-05
+            },
+            {
+              "value": "600 + 60 UC",
+              "price": 0.00014961
+            },
+            {
+              "value": "1500 + 300 UC",
+              "price": 0.0003712
+            },
+            {
+              "value": "3850 UC",
+              "price": 0.00074057
+            },
+            {
+              "value": "8100 UC",
+              "price": 0.00147915
+            },
+            {
+              "value": "16200 UC",
+              "price": 0.00294593
+            },
+            {
+              "value": "24300 UC",
+              "price": 0.00434036
+            },
+            {
+              "value": "32400 UC",
+              "price": 0.00577152
+            }
+          ],
+          "ETH": [
+            {
+              "value": "60 UC",
+              "price": 0.00056097
+            },
+            {
+              "value": "300 + 25 UC",
+              "price": 0.00256451
+            },
+            {
+              "value": "600 + 60 UC",
+              "price": 0.00507354
+            },
+            {
+              "value": "1500 + 300 UC",
+              "price": 0.01258826
+            },
+            {
+              "value": "3850 UC",
+              "price": 0.02511483
+            },
+            {
+              "value": "8100 UC",
+              "price": 0.05016189
+            },
+            {
+              "value": "16200 UC",
+              "price": 0.09990456
+            },
+            {
+              "value": "24300 UC",
+              "price": 0.14719366
+            },
+            {
+              "value": "32400 UC",
+              "price": 0.19572806
+            }
+          ],
+          "USDT": [
+            {
+              "value": "60 UC",
+              "price": 1.26
+            },
+            {
+              "value": "300 + 25 UC",
+              "price": 5.74
+            },
+            {
+              "value": "600 + 60 UC",
+              "price": 11.36
+            },
+            {
+              "value": "1500 + 300 UC",
+              "price": 28.2
+            },
+            {
+              "value": "3850 UC",
+              "price": 56.26
+            },
+            {
+              "value": "8100 UC",
+              "price": 112.36
+            },
+            {
+              "value": "16200 UC",
+              "price": 223.79
+            },
+            {
+              "value": "24300 UC",
+              "price": 329.72
+            },
+            {
+              "value": "32400 UC",
+              "price": 438.43
+            }
+          ],
+          "USDC": [
+            {
+              "value": "60 UC",
+              "price": 1.26
+            },
+            {
+              "value": "300 + 25 UC",
+              "price": 5.74
+            },
+            {
+              "value": "600 + 60 UC",
+              "price": 11.35
+            },
+            {
+              "value": "1500 + 300 UC",
+              "price": 28.17
+            },
+            {
+              "value": "3850 UC",
+              "price": 56.19
+            },
+            {
+              "value": "8100 UC",
+              "price": 112.24
+            },
+            {
+              "value": "16200 UC",
+              "price": 223.53
+            },
+            {
+              "value": "24300 UC",
+              "price": 329.34
+            },
+            {
+              "value": "32400 UC",
+              "price": 437.93
+            }
+          ],
+          "LTC": [
+            {
+              "value": "60 UC",
+              "price": 0.02383526
+            },
+            {
+              "value": "300 + 25 UC",
+              "price": 0.10896392
+            },
+            {
+              "value": "600 + 60 UC",
+              "price": 0.21556998
+            },
+            {
+              "value": "1500 + 300 UC",
+              "price": 0.53486398
+            },
+            {
+              "value": "3850 UC",
+              "price": 1.06710693
+            },
+            {
+              "value": "8100 UC",
+              "price": 2.13133402
+            },
+            {
+              "value": "16200 UC",
+              "price": 4.24485559
+            },
+            {
+              "value": "24300 UC",
+              "price": 6.25412728
+            },
+            {
+              "value": "32400 UC",
+              "price": 8.31631074
+            }
+          ]
+        }
+      },
+      {
+        "url": "https://www.cryptorefills.com/en/aland_islands/gift_cards/rewarble_chatgpt",
+        "country": "Åland Islands",
+        "category": "Electronics",
+        "name": "Rewarble ChatGPT",
+        "title": "Rewarble ChatGPT gift card",
+        "description": "Buy Rewarble Chatgpt gift cards in Aland Islands with Bitcoin and crypto. Instant delivery. Buy with just an email. No account needed.",
+        "image": "https://www.cryptorefills.com/opengraph-image?locale=en&country=ax&kind=Gift%20Cards&brand=Rewarble%20Chatgpt",
+        "redeem_area": "May only be redeemable in Åland Islands",
+        "in_stock": false,
+        "prices": {}
+      },
+      {
+        "url": "https://www.cryptorefills.com/en/aland_islands/gift_cards/rewarble_paypal_cad",
+        "country": "Åland Islands",
+        "category": "Emoney",
+        "name": "Rewarble PayPal CAD",
+        "title": "Rewarble PayPal CAD CAD gift card",
+        "description": "PayPal is an online payment system that allows you to send and receive money around the world. It caters to various needs, be it making an online purchase, sending a gift, or paying a fee. PayPal Gift Card allows you to deposit funds instantly to a PayPal account holder. Brought to you by Rewarble.&nbsp;",
+        "image": "https://cdn.cryptorefills.com/logos_v2/rewarblepaypalcad.webp",
+        "redeem_area": "May only be redeemable in Åland Islands",
+        "in_stock": true,
+        "prices": {},
+        "custom_amount_range": "2 - 1000"
+      },
+      {
+        "url": "https://www.cryptorefills.com/en/aland_islands/gift_cards/rewarble_payz_usd",
+        "country": "Åland Islands",
+        "category": "Emoney",
+        "name": "Rewarble Payz USD",
+        "title": "Rewarble Payz USD USD gift card",
+        "description": "Payz is a global digital wallet that enables secure online payments, money transfers, and international transactions. You can transfer and receive money globally in over 50 currencies and make payments nearly everywhere using physical and virtual cards. Perfect for online shopping, gaming, currency exchange, and more, Payz ensures privacy through anonymous payments without sharing personal information.&nbsp;",
+        "image": "https://cdn.cryptorefills.com/logos_v2/rewarblepayzusd.webp",
+        "redeem_area": "May only be redeemable in Åland Islands",
+        "in_stock": true,
+        "prices": {},
+        "custom_amount_range": "2 - 1000"
+      },
+      {
+        "url": "https://www.cryptorefills.com/en/aland_islands/gift_cards/rewarble_visa_usd",
+        "country": "Åland Islands",
+        "category": "Emoney",
+        "name": "Rewarble VISA USD",
+        "title": "Rewarble VISA USD gift card",
+        "description": "Buy Rewarble Visa Usd gift cards in Aland Islands with Bitcoin and crypto. Instant delivery. Buy with just an email. No account needed.",
+        "image": "https://www.cryptorefills.com/opengraph-image?locale=en&country=ax&kind=Gift%20Cards&brand=Rewarble%20Visa%20Usd",
+        "redeem_area": "May only be redeemable in Åland Islands",
+        "in_stock": false,
+        "prices": {}
+      },
+      {
+        "url": "https://www.cryptorefills.com/en/aland_islands/gift_cards/rituals",
+        "country": "Åland Islands",
+        "category": "Home",
+        "name": "Rituals",
+        "title": "Rituals EUR gift card",
+        "description": "Buy Rituals gift cards with Bitcoin, Crypto or Binance. Can be used as a form of payment for a range of goods and services.",
+        "image": "https://cdn.cryptorefills.com/logos_v2/rituals.webp",
+        "redeem_area": "May only be redeemable in Åland Islands",
+        "in_stock": true,
+        "prices": {
+          "BTC": [
+            {
+              "value": "€10",
+              "price": 0.00015238
+            },
+            {
+              "value": "€25",
+              "price": 0.00037829
+            },
+            {
+              "value": "€50",
+              "price": 0.00075501
+            }
+          ],
+          "ETH": [
+            {
+              "value": "€10",
+              "price": 0.00516749
+            },
+            {
+              "value": "€25",
+              "price": 0.01282871
+            },
+            {
+              "value": "€50",
+              "price": 0.02560448
+            }
+          ],
+          "USDT": [
+            {
+              "value": "€10",
+              "price": 11.58
+            },
+            {
+              "value": "€25",
+              "price": 28.74
+            },
+            {
+              "value": "€50",
+              "price": 57.35
+            }
+          ],
+          "USDC": [
+            {
+              "value": "€10",
+              "price": 11.56
+            },
+            {
+              "value": "€25",
+              "price": 28.71
+            },
+            {
+              "value": "€50",
+              "price": 57.29
+            }
+          ],
+          "LTC": [
+            {
+              "value": "€10",
+              "price": 0.21956198
+            },
+            {
+              "value": "€25",
+              "price": 0.5450806
+            },
+            {
+              "value": "€50",
+              "price": 1.08791161
+            }
+          ]
+        }
+      },
+      {
+        "url": "https://www.cryptorefills.com/en/aland_islands/gift_cards/roblox",
+        "country": "Åland Islands",
+        "category": "Games",
+        "name": "Roblox",
+        "title": "Roblox gift card",
+        "description": "With this Roblox Card, add Roblox Credit to your account to get Robux or a Premium subscription, without having to use a credit card. The code will be instantly delivered by email. Can be redeemed directly in the online version of the game.",
+        "image": "https://cdn.cryptorefills.com/logos_v2/roblox.webp",
+        "redeem_area": "May only be redeemable in Åland Islands",
+        "in_stock": true,
+        "prices": {
+          "BTC": [
+            {
+              "value": "800 Robux",
+              "price": 0.00013559
+            },
+            {
+              "value": "2000 Robux",
+              "price": 0.00033288
+            },
+            {
+              "value": "2500 Robux",
+              "price": 0.00036617
+            },
+            {
+              "value": "4500 Robux",
+              "price": 0.0007224
+            },
+            {
+              "value": "5250 Robux",
+              "price": 0.00075966
+            },
+            {
+              "value": "10000 Robux",
+              "price": 0.00151238
+            }
+          ],
+          "ETH": [
+            {
+              "value": "800 Robux",
+              "price": 0.00459832
+            },
+            {
+              "value": "2000 Robux",
+              "price": 0.01128895
+            },
+            {
+              "value": "2500 Robux",
+              "price": 0.01241794
+            },
+            {
+              "value": "4500 Robux",
+              "price": 0.02449857
+            },
+            {
+              "value": "5250 Robux",
+              "price": 0.02576212
+            },
+            {
+              "value": "10000 Robux",
+              "price": 0.05128883
+            }
+          ],
+          "USDT": [
+            {
+              "value": "800 Robux",
+              "price": 10.3
+            },
+            {
+              "value": "2000 Robux",
+              "price": 25.29
+            },
+            {
+              "value": "2500 Robux",
+              "price": 27.82
+            },
+            {
+              "value": "4500 Robux",
+              "price": 54.88
+            },
+            {
+              "value": "5250 Robux",
+              "price": 57.71
+            },
+            {
+              "value": "10000 Robux",
+              "price": 114.89
+            }
+          ],
+          "USDC": [
+            {
+              "value": "800 Robux",
+              "price": 10.29
+            },
+            {
+              "value": "2000 Robux",
+              "price": 25.26
+            },
+            {
+              "value": "2500 Robux",
+              "price": 27.79
+            },
+            {
+              "value": "4500 Robux",
+              "price": 54.82
+            },
+            {
+              "value": "5250 Robux",
+              "price": 57.65
+            },
+            {
+              "value": "10000 Robux",
+              "price": 114.77
+            }
+          ],
+          "LTC": [
+            {
+              "value": "800 Robux",
+              "price": 0.19537867
+            },
+            {
+              "value": "2000 Robux",
+              "price": 0.47965728
+            },
+            {
+              "value": "2500 Robux",
+              "price": 0.52762703
+            },
+            {
+              "value": "4500 Robux",
+              "price": 1.04092234
+            },
+            {
+              "value": "5250 Robux",
+              "price": 1.09460953
+            },
+            {
+              "value": "10000 Robux",
+              "price": 2.17921666
+            }
+          ]
+        }
+      }
+    ],
+    "albania": [
+      {
+        "url": "https://www.cryptorefills.com/en/albania/gift_cards/blizzard",
+        "country": "Albania",
+        "category": "Games",
+        "name": "Blizzard",
+        "title": "Blizzard gift card",
+        "description": "Buy Blizzard gift cards in Albania with Bitcoin and crypto. Instant delivery. Buy with just an email. No account needed.",
+        "image": "https://www.cryptorefills.com/opengraph-image?locale=en&country=al&kind=Gift%20Cards&brand=Blizzard",
+        "redeem_area": "May only be redeemable in Albania",
+        "in_stock": false,
+        "prices": {}
+      },
+      {
+        "url": "https://www.cryptorefills.com/en/albania/gift_cards/bol.com",
+        "country": "Albania",
+        "category": "Ecommerce",
+        "name": "Bol.com",
+        "title": "Bol.com EUR gift card",
+        "description": "bol.com is Europe's largest online marketplace with millions of products across electronics, books, fashion, toys, home goods, and sports, serving 19 countries.",
+        "image": "https://cdn.cryptorefills.com/logos_v2/bol-com.webp",
+        "redeem_area": "May only be redeemable in Albania",
+        "in_stock": true,
+        "prices": {
+          "BTC": [
+            {
+              "value": "€5",
+              "price": 7.838e-05
+            },
+            {
+              "value": "€10",
+              "price": 0.00015518
+            },
+            {
+              "value": "€20",
+              "price": 0.00030845
+            },
+            {
+              "value": "€25",
+              "price": 0.00038525
+            },
+            {
+              "value": "€50",
+              "price": 0.0007689
+            },
+            {
+              "value": "€100",
+              "price": 0.00153621
+            }
+          ],
+          "ETH": [
+            {
+              "value": "€5",
+              "price": 0.00265822
+            },
+            {
+              "value": "€10",
+              "price": 0.00526254
+            },
+            {
+              "value": "€20",
+              "price": 0.0104604
+            },
+            {
+              "value": "€25",
+              "price": 0.01306472
+            },
+            {
+              "value": "€50",
+              "price": 0.0260755
+            },
+            {
+              "value": "€100",
+              "price": 0.0520971
+            }
+          ],
+          "USDT": [
+            {
+              "value": "€5",
+              "price": 5.95
+            },
+            {
+              "value": "€10",
+              "price": 11.79
+            },
+            {
+              "value": "€20",
+              "price": 23.43
+            },
+            {
+              "value": "€25",
+              "price": 29.27
+            },
+            {
+              "value": "€50",
+              "price": 58.41
+            },
+            {
+              "value": "€100",
+              "price": 116.7
+            }
+          ],
+          "USDC": [
+            {
+              "value": "€5",
+              "price": 5.95
+            },
+            {
+              "value": "€10",
+              "price": 11.78
+            },
+            {
+              "value": "€20",
+              "price": 23.41
+            },
+            {
+              "value": "€25",
+              "price": 29.23
+            },
+            {
+              "value": "€50",
+              "price": 58.35
+            },
+            {
+              "value": "€100",
+              "price": 116.58
+            }
+          ],
+          "LTC": [
+            {
+              "value": "€5",
+              "price": 0.1129453
+            },
+            {
+              "value": "€10",
+              "price": 0.22360067
+            },
+            {
+              "value": "€20",
+              "price": 0.444453
+            },
+            {
+              "value": "€25",
+              "price": 0.55510834
+            },
+            {
+              "value": "€50",
+              "price": 1.10792467
+            },
+            {
+              "value": "€100",
+              "price": 2.21355934
+            }
+          ]
+        }
+      },
+      {
+        "url": "https://www.cryptorefills.com/en/albania/gift_cards/c%26a",
+        "country": "Albania",
+        "category": "Apparel & clothing",
+        "name": "C&A",
+        "title": "C&A gift card",
+        "description": "Buy C&a gift cards in Albania with Bitcoin and crypto. Instant delivery. Buy with just an email. No account needed.",
+        "image": "https://www.cryptorefills.com/opengraph-image?locale=en&country=al&kind=Gift%20Cards&brand=C&a",
+        "redeem_area": "May only be redeemable in {country}",
+        "in_stock": false,
+        "prices": {}
+      },
+      {
+        "url": "https://www.cryptorefills.com/en/albania/gift_cards/free_fire",
+        "country": "Albania",
+        "category": "Games",
+        "name": "Free Fire",
+        "title": "Free Fire USD gift card",
+        "description": "Free Fire is the ultimate survival shooter game available on mobile. Each 10-minute game places you on a remote island where you are pit against 49 other players, all seeking survival. Players freely choose their starting point with their parachute, and aim to stay in the safe zone for as long as possible. Drive vehicles to explore the vast map, hide in trenches, or become invisible by proning under grass. Ambush, snipe, survive, there is only one goal: to survive and answer the call of duty.Free Fire Diamonds are the in-game currency of Free Fire, with players requiring these Diamonds to purchase items likes weapon skins, emotes and characters.&nbsp;",
+        "image": "https://cdn.cryptorefills.com/logos_v2/free-fire.webp",
+        "redeem_area": "May only be redeemable in Albania",
+        "in_stock": true,
+        "prices": {
+          "BTC": [
+            {
+              "value": "$1",
+              "price": 1.539e-05
+            },
+            {
+              "value": "$2",
+              "price": 2.932e-05
+            },
+            {
+              "value": "$5",
+              "price": 7.112e-05
+            },
+            {
+              "value": "$10",
+              "price": 0.00014063
+            },
+            {
+              "value": "$20",
+              "price": 0.00027964
+            }
+          ],
+          "ETH": [
+            {
+              "value": "$1",
+              "price": 0.00052196
+            },
+            {
+              "value": "$2",
+              "price": 0.00099448
+            },
+            {
+              "value": "$5",
+              "price": 0.00241202
+            },
+            {
+              "value": "$10",
+              "price": 0.0047691
+            },
+            {
+              "value": "$20",
+              "price": 0.00948325
+            }
+          ],
+          "USDT": [
+            {
+              "value": "$1",
+              "price": 1.17
+            },
+            {
+              "value": "$2",
+              "price": 2.23
+            },
+            {
+              "value": "$5",
+              "price": 5.4
+            },
+            {
+              "value": "$10",
+              "price": 10.68
+            },
+            {
+              "value": "$20",
+              "price": 21.24
+            }
+          ],
+          "USDC": [
+            {
+              "value": "$1",
+              "price": 1.17
+            },
+            {
+              "value": "$2",
+              "price": 2.23
+            },
+            {
+              "value": "$5",
+              "price": 5.4
+            },
+            {
+              "value": "$10",
+              "price": 10.67
+            },
+            {
+              "value": "$20",
+              "price": 21.22
+            }
+          ],
+          "LTC": [
+            {
+              "value": "$1",
+              "price": 0.02217776
+            },
+            {
+              "value": "$2",
+              "price": 0.04225448
+            },
+            {
+              "value": "$5",
+              "price": 0.10248461
+            },
+            {
+              "value": "$10",
+              "price": 0.20263473
+            },
+            {
+              "value": "$20",
+              "price": 0.40293494
+            }
+          ]
+        }
+      },
+      {
+        "url": "https://www.cryptorefills.com/en/albania/gift_cards/mobile_legends",
+        "country": "Albania",
+        "category": "Games",
+        "name": "Mobile Legends",
+        "title": "Mobile Legends gift card",
+        "description": "Buy Mobile Legends gift cards in Albania with Bitcoin and crypto. Instant delivery. Buy with just an email. No account needed.",
+        "image": "https://www.cryptorefills.com/opengraph-image?locale=en&country=al&kind=Gift%20Cards&brand=Mobile%20Legends",
+        "redeem_area": "May only be redeemable in Albania",
+        "in_stock": false,
+        "prices": {}
+      },
+      {
+        "url": "https://www.cryptorefills.com/en/albania/gift_cards/netflix",
+        "country": "Albania",
+        "category": "Streaming",
+        "name": "Netflix",
+        "title": "Netflix EUR gift card",
+        "description": "Watch Netflix movies &amp; TV shows online or stream right to your smart TV, game console, PC, Mac, mobile, tablet and more.",
+        "image": "https://cdn.cryptorefills.com/logos_v2/netflix.webp",
+        "redeem_area": "May only be redeemable in Albania",
+        "in_stock": true,
+        "prices": {
+          "BTC": [
+            {
+              "value": "€75",
+              "price": 0.00119069
+            }
+          ],
+          "ETH": [
+            {
+              "value": "€75",
+              "price": 0.0403795
+            }
+          ],
+          "USDT": [
+            {
+              "value": "€75",
+              "price": 90.45
+            }
+          ],
+          "USDC": [
+            {
+              "value": "€75",
+              "price": 90.36
+            }
+          ],
+          "LTC": [
+            {
+              "value": "€75",
+              "price": 1.71568879
+            }
+          ]
+        }
+      },
+      {
+        "url": "https://www.cryptorefills.com/en/albania/gift_cards/nordvpn",
+        "country": "Albania",
+        "category": "Electronics",
+        "name": "NordVPN",
+        "title": "NordVPN USD gift card",
+        "description": "NordVPN’s Threat Protection feature scans your downloaded files for malware and blocks trackers, ads, and dangerous websites. Experience the internet without intrusive tracking or censorship. Stay secure on Wi-Fi networks and stop your mobile apps from leaking unencrypted data. Get it all with just the click of a button.Threat ProtectionBlock dangerous websitesSecure your connection on Wi-Fi networksThe fastest VPN on the planet",
+        "image": "https://cdn.cryptorefills.com/logos_v2/nord-vpn.webp",
+        "redeem_area": "May only be redeemable in Albania",
+        "in_stock": true,
+        "prices": {
+          "BTC": [
+            {
+              "value": "$59.99",
+              "price": 0.00082703
+            },
+            {
+              "value": "$78.99",
+              "price": 0.00109408
+            }
+          ],
+          "ETH": [
+            {
+              "value": "$59.99",
+              "price": 0.02804682
+            },
+            {
+              "value": "$78.99",
+              "price": 0.03710341
+            }
+          ],
+          "USDT": [
+            {
+              "value": "$59.99",
+              "price": 62.83
+            },
+            {
+              "value": "$78.99",
+              "price": 83.11
+            }
+          ],
+          "USDC": [
+            {
+              "value": "$59.99",
+              "price": 62.76
+            },
+            {
+              "value": "$78.99",
+              "price": 83.02
+            }
+          ],
+          "LTC": [
+            {
+              "value": "$59.99",
+              "price": 1.19168439
+            },
+            {
+              "value": "$78.99",
+              "price": 1.57649082
+            }
+          ]
+        }
+      },
+      {
+        "url": "https://www.cryptorefills.com/en/albania/gift_cards/pubg_mobile",
+        "country": "Albania",
+        "category": "Games",
+        "name": "PUBG Mobile",
+        "title": "PUBG Mobile gift card",
+        "description": "Use this PUBG Mobile UC gift code to gain your UC of Unknown Cash. It’s perfect for anyone who doesn't want to use their credit card for in-game top-ups or in-app purchases. Simply select the amount of UC you would like and choose from one of our 78 secure payment options to complete your purchase. Your code will arrive within seconds via email! Just receive it, redeem it and get ready for battle royale!",
+        "image": "https://cdn.cryptorefills.com/logos_v2/pubg.webp",
+        "redeem_area": "May only be redeemable in Albania",
+        "in_stock": true,
+        "prices": {
+          "BTC": [
+            {
+              "value": "60 UC",
+              "price": 1.654e-05
+            },
+            {
+              "value": "300 + 25 UC",
+              "price": 7.562e-05
+            },
+            {
+              "value": "600 + 60 UC",
+              "price": 0.00014961
+            },
+            {
+              "value": "1500 + 300 UC",
+              "price": 0.0003712
+            },
+            {
+              "value": "3850 UC",
+              "price": 0.00074057
+            },
+            {
+              "value": "8100 UC",
+              "price": 0.00147915
+            },
+            {
+              "value": "16200 UC",
+              "price": 0.00294593
+            },
+            {
+              "value": "24300 UC",
+              "price": 0.00434036
+            },
+            {
+              "value": "32400 UC",
+              "price": 0.00577152
+            }
+          ],
+          "ETH": [
+            {
+              "value": "60 UC",
+              "price": 0.00056097
+            },
+            {
+              "value": "300 + 25 UC",
+              "price": 0.00256451
+            },
+            {
+              "value": "600 + 60 UC",
+              "price": 0.00507354
+            },
+            {
+              "value": "1500 + 300 UC",
+              "price": 0.01258826
+            },
+            {
+              "value": "3850 UC",
+              "price": 0.02511483
+            },
+            {
+              "value": "8100 UC",
+              "price": 0.05016189
+            },
+            {
+              "value": "16200 UC",
+              "price": 0.09990456
+            },
+            {
+              "value": "24300 UC",
+              "price": 0.14719366
+            },
+            {
+              "value": "32400 UC",
+              "price": 0.19572806
+            }
+          ],
+          "USDT": [
+            {
+              "value": "60 UC",
+              "price": 1.26
+            },
+            {
+              "value": "300 + 25 UC",
+              "price": 5.74
+            },
+            {
+              "value": "600 + 60 UC",
+              "price": 11.36
+            },
+            {
+              "value": "1500 + 300 UC",
+              "price": 28.2
+            },
+            {
+              "value": "3850 UC",
+              "price": 56.26
+            },
+            {
+              "value": "8100 UC",
+              "price": 112.36
+            },
+            {
+              "value": "16200 UC",
+              "price": 223.79
+            },
+            {
+              "value": "24300 UC",
+              "price": 329.72
+            },
+            {
+              "value": "32400 UC",
+              "price": 438.43
+            }
+          ],
+          "USDC": [
+            {
+              "value": "60 UC",
+              "price": 1.26
+            },
+            {
+              "value": "300 + 25 UC",
+              "price": 5.74
+            },
+            {
+              "value": "600 + 60 UC",
+              "price": 11.35
+            },
+            {
+              "value": "1500 + 300 UC",
+              "price": 28.17
+            },
+            {
+              "value": "3850 UC",
+              "price": 56.2
+            },
+            {
+              "value": "8100 UC",
+              "price": 112.25
+            },
+            {
+              "value": "16200 UC",
+              "price": 223.55
+            },
+            {
+              "value": "24300 UC",
+              "price": 329.37
+            },
+            {
+              "value": "32400 UC",
+              "price": 437.97
+            }
+          ],
+          "LTC": [
+            {
+              "value": "60 UC",
+              "price": 0.02383526
+            },
+            {
+              "value": "300 + 25 UC",
+              "price": 0.10896392
+            },
+            {
+              "value": "600 + 60 UC",
+              "price": 0.21556998
+            },
+            {
+              "value": "1500 + 300 UC",
+              "price": 0.53486398
+            },
+            {
+              "value": "3850 UC",
+              "price": 1.06710693
+            },
+            {
+              "value": "8100 UC",
+              "price": 2.13133402
+            },
+            {
+              "value": "16200 UC",
+              "price": 4.24485559
+            },
+            {
+              "value": "24300 UC",
+              "price": 6.25412728
+            },
+            {
+              "value": "32400 UC",
+              "price": 8.31631074
+            }
+          ]
+        }
+      },
+      {
+        "url": "https://www.cryptorefills.com/en/albania/gift_cards/rewarble_chatgpt",
+        "country": "Albania",
+        "category": "Electronics",
+        "name": "Rewarble ChatGPT",
+        "title": "Rewarble ChatGPT gift card",
+        "description": "Buy Rewarble Chatgpt gift cards in Albania with Bitcoin and crypto. Instant delivery. Buy with just an email. No account needed.",
+        "image": "https://www.cryptorefills.com/opengraph-image?locale=en&country=al&kind=Gift%20Cards&brand=Rewarble%20Chatgpt",
+        "redeem_area": "May only be redeemable in Albania",
+        "in_stock": false,
+        "prices": {}
+      },
+      {
+        "url": "https://www.cryptorefills.com/en/albania/gift_cards/rewarble_paypal_cad",
+        "country": "Albania",
+        "category": "Emoney",
+        "name": "Rewarble PayPal CAD",
+        "title": "Rewarble PayPal CAD CAD gift card",
+        "description": "PayPal is an online payment system that allows you to send and receive money around the world. It caters to various needs, be it making an online purchase, sending a gift, or paying a fee. PayPal Gift Card allows you to deposit funds instantly to a PayPal account holder. Brought to you by Rewarble.&nbsp;",
+        "image": "https://cdn.cryptorefills.com/logos_v2/rewarblepaypalcad.webp",
+        "redeem_area": "May only be redeemable in Albania",
+        "in_stock": true,
+        "prices": {},
+        "custom_amount_range": "2 - 1000"
+      },
+      {
+        "url": "https://www.cryptorefills.com/en/albania/gift_cards/rewarble_payz_usd",
+        "country": "Albania",
+        "category": "Emoney",
+        "name": "Rewarble Payz USD",
+        "title": "Rewarble Payz USD USD gift card",
+        "description": "Payz is a global digital wallet that enables secure online payments, money transfers, and international transactions. You can transfer and receive money globally in over 50 currencies and make payments nearly everywhere using physical and virtual cards. Perfect for online shopping, gaming, currency exchange, and more, Payz ensures privacy through anonymous payments without sharing personal information.&nbsp;",
+        "image": "https://cdn.cryptorefills.com/logos_v2/rewarblepayzusd.webp",
+        "redeem_area": "May only be redeemable in Albania",
+        "in_stock": true,
+        "prices": {},
+        "custom_amount_range": "2 - 1000"
+      },
+      {
+        "url": "https://www.cryptorefills.com/en/albania/gift_cards/rewarble_visa_usd",
+        "country": "Albania",
+        "category": "Emoney",
+        "name": "Rewarble VISA USD",
+        "title": "Rewarble VISA USD gift card",
+        "description": "Buy Rewarble Visa Usd gift cards in Albania with Bitcoin and crypto. Instant delivery. Buy with just an email. No account needed.",
+        "image": "https://www.cryptorefills.com/opengraph-image?locale=en&country=al&kind=Gift%20Cards&brand=Rewarble%20Visa%20Usd",
+        "redeem_area": "May only be redeemable in Albania",
+        "in_stock": false,
+        "prices": {}
+      },
+      {
+        "url": "https://www.cryptorefills.com/en/albania/gift_cards/rituals",
+        "country": "Albania",
+        "category": "Home",
+        "name": "Rituals",
+        "title": "Rituals EUR gift card",
+        "description": "Buy Rituals gift cards with Bitcoin, Crypto or Binance. Can be used as a form of payment for a range of goods and services.",
+        "image": "https://cdn.cryptorefills.com/logos_v2/rituals.webp",
+        "redeem_area": "May only be redeemable in Albania",
+        "in_stock": true,
+        "prices": {
+          "BTC": [
+            {
+              "value": "€10",
+              "price": 0.00015238
+            },
+            {
+              "value": "€25",
+              "price": 0.00037829
+            },
+            {
+              "value": "€50",
+              "price": 0.00075501
+            }
+          ],
+          "ETH": [
+            {
+              "value": "€10",
+              "price": 0.00516749
+            },
+            {
+              "value": "€25",
+              "price": 0.01282871
+            },
+            {
+              "value": "€50",
+              "price": 0.02560448
+            }
+          ],
+          "USDT": [
+            {
+              "value": "€10",
+              "price": 11.58
+            },
+            {
+              "value": "€25",
+              "price": 28.74
+            },
+            {
+              "value": "€50",
+              "price": 57.35
+            }
+          ],
+          "USDC": [
+            {
+              "value": "€10",
+              "price": 11.56
+            },
+            {
+              "value": "€25",
+              "price": 28.71
+            },
+            {
+              "value": "€50",
+              "price": 57.29
+            }
+          ],
+          "LTC": [
+            {
+              "value": "€10",
+              "price": 0.21956198
+            },
+            {
+              "value": "€25",
+              "price": 0.5450806
+            },
+            {
+              "value": "€50",
+              "price": 1.08791161
+            }
+          ]
+        }
+      },
+      {
+        "url": "https://www.cryptorefills.com/en/albania/gift_cards/roblox",
+        "country": "Albania",
+        "category": "Games",
+        "name": "Roblox",
+        "title": "Roblox gift card",
+        "description": "With this Roblox Card, add Roblox Credit to your account to get Robux or a Premium subscription, without having to use a credit card. The code will be instantly delivered by email. Can be redeemed directly in the online version of the game.",
+        "image": "https://cdn.cryptorefills.com/logos_v2/roblox.webp",
+        "redeem_area": "May only be redeemable in Albania",
+        "in_stock": true,
+        "prices": {
+          "BTC": [
+            {
+              "value": "800 Robux",
+              "price": 0.00013559
+            },
+            {
+              "value": "2000 Robux",
+              "price": 0.00033288
+            },
+            {
+              "value": "2500 Robux",
+              "price": 0.00036617
+            },
+            {
+              "value": "4500 Robux",
+              "price": 0.0007224
+            },
+            {
+              "value": "5250 Robux",
+              "price": 0.00075966
+            },
+            {
+              "value": "10000 Robux",
+              "price": 0.00151238
+            }
+          ],
+          "ETH": [
+            {
+              "value": "800 Robux",
+              "price": 0.00459832
+            },
+            {
+              "value": "2000 Robux",
+              "price": 0.01128895
+            },
+            {
+              "value": "2500 Robux",
+              "price": 0.01241794
+            },
+            {
+              "value": "4500 Robux",
+              "price": 0.02449857
+            },
+            {
+              "value": "5250 Robux",
+              "price": 0.02576212
+            },
+            {
+              "value": "10000 Robux",
+              "price": 0.05128883
+            }
+          ],
+          "USDT": [
+            {
+              "value": "800 Robux",
+              "price": 10.3
+            },
+            {
+              "value": "2000 Robux",
+              "price": 25.29
+            },
+            {
+              "value": "2500 Robux",
+              "price": 27.82
+            },
+            {
+              "value": "4500 Robux",
+              "price": 54.88
+            },
+            {
+              "value": "5250 Robux",
+              "price": 57.71
+            },
+            {
+              "value": "10000 Robux",
+              "price": 114.89
+            }
+          ],
+          "USDC": [
+            {
+              "value": "800 Robux",
+              "price": 10.29
+            },
+            {
+              "value": "2000 Robux",
+              "price": 25.26
+            },
+            {
+              "value": "2500 Robux",
+              "price": 27.79
+            },
+            {
+              "value": "4500 Robux",
+              "price": 54.82
+            },
+            {
+              "value": "5250 Robux",
+              "price": 57.65
+            },
+            {
+              "value": "10000 Robux",
+              "price": 114.77
+            }
+          ],
+          "LTC": [
+            {
+              "value": "800 Robux",
+              "price": 0.19537867
+            },
+            {
+              "value": "2000 Robux",
+              "price": 0.47965728
+            },
+            {
+              "value": "2500 Robux",
+              "price": 0.52762703
+            },
+            {
+              "value": "4500 Robux",
+              "price": 1.04092234
+            },
+            {
+              "value": "5250 Robux",
+              "price": 1.09460953
+            },
+            {
+              "value": "10000 Robux",
+              "price": 2.17921666
+            }
+          ]
+        }
+      }
+    ],
+    "algeria": [
+      {
+        "url": "https://www.cryptorefills.com/en/algeria/gift_cards/c%26a",
+        "country": "Algeria",
+        "category": "Apparel & clothing",
+        "name": "C&A",
+        "title": "C&A gift card",
+        "description": "Buy C&a gift cards in Algeria with Bitcoin and crypto. Instant delivery. Buy with just an email. No account needed.",
+        "image": "https://www.cryptorefills.com/opengraph-image?locale=en&country=dz&kind=Gift%20Cards&brand=C&a",
+        "redeem_area": "May only be redeemable in {country}",
+        "in_stock": false,
+        "prices": {}
+      },
+      {
+        "url": "https://www.cryptorefills.com/en/algeria/gift_cards/free_fire",
+        "country": "Algeria",
+        "category": "Games",
+        "name": "Free Fire",
+        "title": "Free Fire USD gift card",
+        "description": "Free Fire is the ultimate survival shooter game available on mobile. Each 10-minute game places you on a remote island where you are pit against 49 other players, all seeking survival. Players freely choose their starting point with their parachute, and aim to stay in the safe zone for as long as possible. Drive vehicles to explore the vast map, hide in trenches, or become invisible by proning under grass. Ambush, snipe, survive, there is only one goal: to survive and answer the call of duty.Free Fire Diamonds are the in-game currency of Free Fire, with players requiring these Diamonds to purchase items likes weapon skins, emotes and characters.&nbsp;",
+        "image": "https://cdn.cryptorefills.com/logos_v2/free-fire.webp",
+        "redeem_area": "May only be redeemable in Algeria",
+        "in_stock": true,
+        "prices": {
+          "BTC": [
+            {
+              "value": "$1",
+              "price": 1.539e-05
+            },
+            {
+              "value": "$2",
+              "price": 2.932e-05
+            },
+            {
+              "value": "$5",
+              "price": 7.112e-05
+            },
+            {
+              "value": "$10",
+              "price": 0.00014063
+            },
+            {
+              "value": "$20",
+              "price": 0.00027964
+            }
+          ],
+          "ETH": [
+            {
+              "value": "$1",
+              "price": 0.00052196
+            },
+            {
+              "value": "$2",
+              "price": 0.00099448
+            },
+            {
+              "value": "$5",
+              "price": 0.00241202
+            },
+            {
+              "value": "$10",
+              "price": 0.0047691
+            },
+            {
+              "value": "$20",
+              "price": 0.00948325
+            }
+          ],
+          "USDT": [
+            {
+              "value": "$1",
+              "price": 1.17
+            },
+            {
+              "value": "$2",
+              "price": 2.23
+            },
+            {
+              "value": "$5",
+              "price": 5.4
+            },
+            {
+              "value": "$10",
+              "price": 10.68
+            },
+            {
+              "value": "$20",
+              "price": 21.24
+            }
+          ],
+          "USDC": [
+            {
+              "value": "$1",
+              "price": 1.17
+            },
+            {
+              "value": "$2",
+              "price": 2.23
+            },
+            {
+              "value": "$5",
+              "price": 5.4
+            },
+            {
+              "value": "$10",
+              "price": 10.67
+            },
+            {
+              "value": "$20",
+              "price": 21.22
+            }
+          ],
+          "LTC": [
+            {
+              "value": "$1",
+              "price": 0.02217776
+            },
+            {
+              "value": "$2",
+              "price": 0.04225448
+            },
+            {
+              "value": "$5",
+              "price": 0.10248461
+            },
+            {
+              "value": "$10",
+              "price": 0.20263473
+            },
+            {
+              "value": "$20",
+              "price": 0.40293494
+            }
+          ]
+        }
+      },
+      {
+        "url": "https://www.cryptorefills.com/en/algeria/gift_cards/mobile_legends",
+        "country": "Algeria",
+        "category": "Games",
+        "name": "Mobile Legends",
+        "title": "Mobile Legends gift card",
+        "description": "Buy Mobile Legends gift cards in Algeria with Bitcoin and crypto. Instant delivery. Buy with just an email. No account needed.",
+        "image": "https://www.cryptorefills.com/opengraph-image?locale=en&country=dz&kind=Gift%20Cards&brand=Mobile%20Legends",
+        "redeem_area": "May only be redeemable in Algeria",
+        "in_stock": false,
+        "prices": {}
+      },
+      {
+        "url": "https://www.cryptorefills.com/en/algeria/gift_cards/nordvpn",
+        "country": "Algeria",
+        "category": "Electronics",
+        "name": "NordVPN",
+        "title": "NordVPN USD gift card",
+        "description": "NordVPN’s Threat Protection feature scans your downloaded files for malware and blocks trackers, ads, and dangerous websites. Experience the internet without intrusive tracking or censorship. Stay secure on Wi-Fi networks and stop your mobile apps from leaking unencrypted data. Get it all with just the click of a button.Threat ProtectionBlock dangerous websitesSecure your connection on Wi-Fi networksThe fastest VPN on the planet",
+        "image": "https://cdn.cryptorefills.com/logos_v2/nord-vpn.webp",
+        "redeem_area": "May only be redeemable in Algeria",
+        "in_stock": true,
+        "prices": {
+          "BTC": [
+            {
+              "value": "$59.99",
+              "price": 0.00082703
+            },
+            {
+              "value": "$78.99",
+              "price": 0.00109408
+            }
+          ],
+          "ETH": [
+            {
+              "value": "$59.99",
+              "price": 0.02804682
+            },
+            {
+              "value": "$78.99",
+              "price": 0.03710341
+            }
+          ],
+          "USDT": [
+            {
+              "value": "$59.99",
+              "price": 62.83
+            },
+            {
+              "value": "$78.99",
+              "price": 83.11
+            }
+          ],
+          "USDC": [
+            {
+              "value": "$59.99",
+              "price": 62.76
+            },
+            {
+              "value": "$78.99",
+              "price": 83.02
+            }
+          ],
+          "LTC": [
+            {
+              "value": "$59.99",
+              "price": 1.19168439
+            },
+            {
+              "value": "$78.99",
+              "price": 1.57649082
+            }
+          ]
+        }
+      },
+      {
+        "url": "https://www.cryptorefills.com/en/algeria/gift_cards/pubg_mobile",
+        "country": "Algeria",
+        "category": "Games",
+        "name": "PUBG Mobile",
+        "title": "PUBG Mobile gift card",
+        "description": "Use this PUBG Mobile UC gift code to gain your UC of Unknown Cash. It’s perfect for anyone who doesn't want to use their credit card for in-game top-ups or in-app purchases. Simply select the amount of UC you would like and choose from one of our 78 secure payment options to complete your purchase. Your code will arrive within seconds via email! Just receive it, redeem it and get ready for battle royale!",
+        "image": "https://cdn.cryptorefills.com/logos_v2/pubg.webp",
+        "redeem_area": "May only be redeemable in Algeria",
+        "in_stock": true,
+        "prices": {
+          "BTC": [
+            {
+              "value": "60 UC",
+              "price": 1.654e-05
+            },
+            {
+              "value": "300 + 25 UC",
+              "price": 7.562e-05
+            },
+            {
+              "value": "600 + 60 UC",
+              "price": 0.00014961
+            },
+            {
+              "value": "1500 + 300 UC",
+              "price": 0.0003712
+            },
+            {
+              "value": "3850 UC",
+              "price": 0.00074057
+            },
+            {
+              "value": "8100 UC",
+              "price": 0.00147915
+            },
+            {
+              "value": "16200 UC",
+              "price": 0.00294593
+            },
+            {
+              "value": "24300 UC",
+              "price": 0.00434036
+            },
+            {
+              "value": "32400 UC",
+              "price": 0.00577152
+            }
+          ],
+          "ETH": [
+            {
+              "value": "60 UC",
+              "price": 0.00056097
+            },
+            {
+              "value": "300 + 25 UC",
+              "price": 0.00256451
+            },
+            {
+              "value": "600 + 60 UC",
+              "price": 0.00507354
+            },
+            {
+              "value": "1500 + 300 UC",
+              "price": 0.01258826
+            },
+            {
+              "value": "3850 UC",
+              "price": 0.02511483
+            },
+            {
+              "value": "8100 UC",
+              "price": 0.05016189
+            },
+            {
+              "value": "16200 UC",
+              "price": 0.09990456
+            },
+            {
+              "value": "24300 UC",
+              "price": 0.14719366
+            },
+            {
+              "value": "32400 UC",
+              "price": 0.19572806
+            }
+          ],
+          "USDT": [
+            {
+              "value": "60 UC",
+              "price": 1.26
+            },
+            {
+              "value": "300 + 25 UC",
+              "price": 5.74
+            },
+            {
+              "value": "600 + 60 UC",
+              "price": 11.36
+            },
+            {
+              "value": "1500 + 300 UC",
+              "price": 28.2
+            },
+            {
+              "value": "3850 UC",
+              "price": 56.26
+            },
+            {
+              "value": "8100 UC",
+              "price": 112.36
+            },
+            {
+              "value": "16200 UC",
+              "price": 223.79
+            },
+            {
+              "value": "24300 UC",
+              "price": 329.72
+            },
+            {
+              "value": "32400 UC",
+              "price": 438.43
+            }
+          ],
+          "USDC": [
+            {
+              "value": "60 UC",
+              "price": 1.26
+            },
+            {
+              "value": "300 + 25 UC",
+              "price": 5.74
+            },
+            {
+              "value": "600 + 60 UC",
+              "price": 11.35
+            },
+            {
+              "value": "1500 + 300 UC",
+              "price": 28.17
+            },
+            {
+              "value": "3850 UC",
+              "price": 56.2
+            },
+            {
+              "value": "8100 UC",
+              "price": 112.25
+            },
+            {
+              "value": "16200 UC",
+              "price": 223.55
+            },
+            {
+              "value": "24300 UC",
+              "price": 329.37
+            },
+            {
+              "value": "32400 UC",
+              "price": 437.97
+            }
+          ],
+          "LTC": [
+            {
+              "value": "60 UC",
+              "price": 0.02383526
+            },
+            {
+              "value": "300 + 25 UC",
+              "price": 0.10896392
+            },
+            {
+              "value": "600 + 60 UC",
+              "price": 0.21556998
+            },
+            {
+              "value": "1500 + 300 UC",
+              "price": 0.53486398
+            },
+            {
+              "value": "3850 UC",
+              "price": 1.06710693
+            },
+            {
+              "value": "8100 UC",
+              "price": 2.13133402
+            },
+            {
+              "value": "16200 UC",
+              "price": 4.24485559
+            },
+            {
+              "value": "24300 UC",
+              "price": 6.25412728
+            },
+            {
+              "value": "32400 UC",
+              "price": 8.31631074
+            }
+          ]
+        }
+      },
+      {
+        "url": "https://www.cryptorefills.com/en/algeria/gift_cards/rewarble_chatgpt",
+        "country": "Algeria",
+        "category": "Electronics",
+        "name": "Rewarble ChatGPT",
+        "title": "Rewarble ChatGPT gift card",
+        "description": "Buy Rewarble Chatgpt gift cards in Algeria with Bitcoin and crypto. Instant delivery. Buy with just an email. No account needed.",
+        "image": "https://www.cryptorefills.com/opengraph-image?locale=en&country=dz&kind=Gift%20Cards&brand=Rewarble%20Chatgpt",
+        "redeem_area": "May only be redeemable in Algeria",
+        "in_stock": false,
+        "prices": {}
+      },
+      {
+        "url": "https://www.cryptorefills.com/en/algeria/gift_cards/rewarble_paypal_cad",
+        "country": "Algeria",
+        "category": "Emoney",
+        "name": "Rewarble PayPal CAD",
+        "title": "Rewarble PayPal CAD CAD gift card",
+        "description": "PayPal is an online payment system that allows you to send and receive money around the world. It caters to various needs, be it making an online purchase, sending a gift, or paying a fee. PayPal Gift Card allows you to deposit funds instantly to a PayPal account holder. Brought to you by Rewarble.&nbsp;",
+        "image": "https://cdn.cryptorefills.com/logos_v2/rewarblepaypalcad.webp",
+        "redeem_area": "May only be redeemable in Algeria",
+        "in_stock": true,
+        "prices": {},
+        "custom_amount_range": "2 - 1000"
+      },
+      {
+        "url": "https://www.cryptorefills.com/en/algeria/gift_cards/rewarble_payz_usd",
+        "country": "Algeria",
+        "category": "Emoney",
+        "name": "Rewarble Payz USD",
+        "title": "Rewarble Payz USD USD gift card",
+        "description": "Payz is a global digital wallet that enables secure online payments, money transfers, and international transactions. You can transfer and receive money globally in over 50 currencies and make payments nearly everywhere using physical and virtual cards. Perfect for online shopping, gaming, currency exchange, and more, Payz ensures privacy through anonymous payments without sharing personal information.&nbsp;",
+        "image": "https://cdn.cryptorefills.com/logos_v2/rewarblepayzusd.webp",
+        "redeem_area": "May only be redeemable in Algeria",
+        "in_stock": true,
+        "prices": {},
+        "custom_amount_range": "2 - 1000"
+      },
+      {
+        "url": "https://www.cryptorefills.com/en/algeria/gift_cards/rewarble_visa_usd",
+        "country": "Algeria",
+        "category": "Emoney",
+        "name": "Rewarble VISA USD",
+        "title": "Rewarble VISA USD gift card",
+        "description": "Buy Rewarble Visa Usd gift cards in Algeria with Bitcoin and crypto. Instant delivery. Buy with just an email. No account needed.",
+        "image": "https://www.cryptorefills.com/opengraph-image?locale=en&country=dz&kind=Gift%20Cards&brand=Rewarble%20Visa%20Usd",
+        "redeem_area": "May only be redeemable in Algeria",
+        "in_stock": false,
+        "prices": {}
+      },
+      {
+        "url": "https://www.cryptorefills.com/en/algeria/gift_cards/roblox",
+        "country": "Algeria",
+        "category": "Games",
+        "name": "Roblox",
+        "title": "Roblox gift card",
+        "description": "With this Roblox Card, add Roblox Credit to your account to get Robux or a Premium subscription, without having to use a credit card. The code will be instantly delivered by email. Can be redeemed directly in the online version of the game.",
+        "image": "https://cdn.cryptorefills.com/logos_v2/roblox.webp",
+        "redeem_area": "May only be redeemable in Algeria",
+        "in_stock": true,
+        "prices": {
+          "BTC": [
+            {
+              "value": "800 Robux",
+              "price": 0.00013559
+            },
+            {
+              "value": "2000 Robux",
+              "price": 0.00033288
+            },
+            {
+              "value": "2500 Robux",
+              "price": 0.00036617
+            },
+            {
+              "value": "4500 Robux",
+              "price": 0.0007224
+            },
+            {
+              "value": "5250 Robux",
+              "price": 0.00075966
+            },
+            {
+              "value": "10000 Robux",
+              "price": 0.00151238
+            }
+          ],
+          "ETH": [
+            {
+              "value": "800 Robux",
+              "price": 0.00459832
+            },
+            {
+              "value": "2000 Robux",
+              "price": 0.01128895
+            },
+            {
+              "value": "2500 Robux",
+              "price": 0.01241794
+            },
+            {
+              "value": "4500 Robux",
+              "price": 0.02449857
+            },
+            {
+              "value": "5250 Robux",
+              "price": 0.02576212
+            },
+            {
+              "value": "10000 Robux",
+              "price": 0.05128883
+            }
+          ],
+          "USDT": [
+            {
+              "value": "800 Robux",
+              "price": 10.3
+            },
+            {
+              "value": "2000 Robux",
+              "price": 25.29
+            },
+            {
+              "value": "2500 Robux",
+              "price": 27.82
+            },
+            {
+              "value": "4500 Robux",
+              "price": 54.88
+            },
+            {
+              "value": "5250 Robux",
+              "price": 57.71
+            },
+            {
+              "value": "10000 Robux",
+              "price": 114.89
+            }
+          ],
+          "USDC": [
+            {
+              "value": "800 Robux",
+              "price": 10.29
+            },
+            {
+              "value": "2000 Robux",
+              "price": 25.26
+            },
+            {
+              "value": "2500 Robux",
+              "price": 27.79
+            },
+            {
+              "value": "4500 Robux",
+              "price": 54.82
+            },
+            {
+              "value": "5250 Robux",
+              "price": 57.65
+            },
+            {
+              "value": "10000 Robux",
+              "price": 114.77
+            }
+          ],
+          "LTC": [
+            {
+              "value": "800 Robux",
+              "price": 0.19537867
+            },
+            {
+              "value": "2000 Robux",
+              "price": 0.47965728
+            },
+            {
+              "value": "2500 Robux",
+              "price": 0.52762703
+            },
+            {
+              "value": "4500 Robux",
+              "price": 1.04092234
+            },
+            {
+              "value": "5250 Robux",
+              "price": 1.09460953
+            },
+            {
+              "value": "10000 Robux",
+              "price": 2.17921666
+            }
+          ]
+        }
+      }
+    ]
+  }
+}
