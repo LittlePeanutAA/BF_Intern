@@ -1,0 +1,4 @@
+id:int|name:str|birthday:str|phone:str|head_of_class:int
+1|Đỗ Minh Hải|1980-05-10|0903000001|1
+2|Vũ Thị Lan|1985-09-21|0903000002|2
+3|Hoàng Văn Nam|1978-12-01|0903000003|
