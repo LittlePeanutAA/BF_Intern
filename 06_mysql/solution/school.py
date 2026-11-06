@@ -9,7 +9,7 @@ from urllib.parse import unquote, urlparse
 import pymysql
 from pymysql.constants import CLIENT, ER
 
-DEFAULT_URL = "mysql://qlsv:qlsv@127.0.0.1:3306/qlsv"
+DEFAULT_URL = "mysql://qlsv:Sb3CsFFI2ZcIzbeg@127.0.0.1:3306/qlsv"
 
 
 class SchoolError(Exception):

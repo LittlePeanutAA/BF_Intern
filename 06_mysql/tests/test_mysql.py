@@ -1,7 +1,7 @@
 """Test tích hợp trên MySQL thật. Mỗi test chạy trên một database sạch đã nạp sample_data.
 
     docker compose up -d
-    QLSV_TEST_DB_URL=mysql://root:root@127.0.0.1:3306/qlsv_test pytest -q
+    QLSV_TEST_DB_URL=mysql://root:Ff8jHrRZBgVYVFBx@127.0.0.1:3306/qlsv_test pytest -q
 
 CẢNH BÁO: database trong QLSV_TEST_DB_URL bị xoá sạch và tạo lại ở mỗi test.
 """

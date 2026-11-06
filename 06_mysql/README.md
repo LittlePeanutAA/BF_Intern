@@ -40,5 +40,5 @@ python qlsv.py list_student --class_id 1
 python qlsv.py --db mysql://user:pass@host:3306/qlsv list_class
 
 # Test: phần không cần MySQL luôn chạy; phần tích hợp cần một database được phép XOÁ SẠCH
-QLSV_TEST_DB_URL=mysql://root:root@127.0.0.1:3306/qlsv_test pytest -q   # chạy từ thư mục bài 06
+QLSV_TEST_DB_URL=mysql://root:Ff8jHrRZBgVYVFBx@127.0.0.1:3306/qlsv_test pytest -q   # chạy từ thư mục bài 06
 ```
