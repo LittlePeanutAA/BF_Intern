@@ -1,0 +1,14 @@
+# Bước 2: variety / vintage trong vùng nhãn đã cắt (0 = variety, 1 = vintage).
+# Một model cho cả hai class. Các model riêng từng class của bản cũ được đo trên tập val khác
+# nên không có bằng chứng chúng tốt hơn; model variety fine-tune còn thấp hơn trên cùng tập val
+# (mAP50 0,916 so với 0,924).
+model: yolov8s.pt
+epochs: 100
+patience: 20
+imgsz: 640
+batch: 32
+workers: 8
+cache: false
+fliplr: 0.0
+seed: 0
+deterministic: true

@@ -1,0 +1,14 @@
+# Bước 1: label / variety / vintage trên ảnh gốc.
+# train.py truyền thẳng các key này vào YOLO.train(**cfg).
+# Chỉ chứa tham số train thật của Ultralytics. Notebook cũ có `class_weights`, `hyp:`, `fl_gamma`, `obj`
+# (của YOLOv5): đều bị bỏ qua trong im lặng.
+model: yolov8s.pt
+epochs: 100
+patience: 20
+imgsz: 640
+batch: 32
+workers: 8
+cache: false        # đọc từ ổ cục bộ; đừng dùng cache="disk" trên Drive (ghi một file .npy cạnh mỗi ảnh)
+fliplr: 0.0         # chữ bị lật ngang không phải mẫu hợp lệ; mọi run cũ đều chạy mặc định 0.5
+seed: 0
+deterministic: true
