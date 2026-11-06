@@ -1,5 +1,0 @@
-flask==2.0.1
-ultralytics
-opencv-python
-numpy
-python-dotenv
