@@ -1,0 +1,18 @@
+# MySQL cho bài 06: docker compose up -d
+# Lần đầu khởi động, schema.sql được chạy tự động.
+services:
+  mysql:
+    image: mysql:8.4
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: qlsv
+      MYSQL_USER: qlsv
+      MYSQL_PASSWORD: qlsv
+    ports:
+      - "3306:3306"
+    volumes:
+      - ./schema.sql:/docker-entrypoint-initdb.d/schema.sql:ro
+      - qlsv-data:/var/lib/mysql
+    command: --character-set-server=utf8mb4 --collation-server=utf8mb4_0900_ai_ci
+volumes:
+  qlsv-data:
