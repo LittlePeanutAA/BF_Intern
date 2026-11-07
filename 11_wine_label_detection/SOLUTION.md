@@ -5,6 +5,7 @@ solution/annotations.py     DB rect (%) -> box YOLO; dHash gom ảnh trùng; chi
 solution/crops.py           cắt vùng nhãn, đổi box qua lại giữa ảnh gốc và vùng cắt
 solution/yolo_data.py       dựng manifest + dataset bước 1 (ảnh gốc) và bước 2 (vùng nhãn)
 solution/train.py           train một bước rồi đo một lần trên test
+solution/eval_pipeline.py   đo cả pipeline (bước 1, bước 1 + 2) trên ảnh gốc của tập test
 solution/configs/*.yaml     tham số train (chỉ gồm key hợp lệ của Ultralytics)
 solution/api.py             API FastAPI hai bước
 ```
@@ -44,20 +45,53 @@ Lý do:
 
 ## 4. Kết quả
 
-Kết quả dưới đây lấy từ các run năm 2024 (Tesla T4). mAP50 theo từng class:
+Train lại cả hai bước trên split theo nhóm ở mục 3 (11/2026, một GPU L4, hai bước chạy song song):
+
+- Bước 1: 7 270 ảnh có box, chia train 5 145 / val 1 033 / test 1 092. Dừng sớm ở epoch 88 (tốt nhất ở epoch 68), mất 1,5 giờ.
+- Bước 2: 4 431 vùng nhãn đã cắt, chia 3 132 / 644 / 655, cùng split với bước 1. Dừng ở epoch 72 (tốt nhất ở epoch 52), mất 1 giờ.
+
+### 4.1. Từng bước, trên tập test của chính bước đó
+
+| Bước | Class | P | R | mAP50 | mAP50-95 |
+|---|---|---|---|---|---|
+| 1 (ảnh gốc) | label | 0,975 | 0,970 | 0,992 | 0,942 |
+| 1 (ảnh gốc) | variety | 0,898 | 0,742 | 0,822 | 0,674 |
+| 1 (ảnh gốc) | vintage | 0,878 | 0,891 | 0,920 | 0,724 |
+| 2 (vùng nhãn) | variety | 0,921 | 0,876 | **0,924** | **0,755** |
+| 2 (vùng nhãn) | vintage | 0,923 | 0,909 | **0,959** | **0,762** |
+
+Hai dòng cuối chưa so công bằng với ba dòng đầu: bước 2 được đo trên vùng cắt từ box nhãn **thật**, nên không tính trường hợp bước 1 cắt nhãn lệch hoặc không tìm thấy nhãn.
+
+### 4.2. Cả pipeline, trên 1 092 ảnh gốc của tập test
+
+[eval_pipeline.py](solution/eval_pipeline.py) chạy đúng logic của API rồi so box trả ra với ground truth trên ảnh gốc. Mỗi class chỉ lấy một box có độ tin cậy cao nhất, giống cách sản phẩm dùng kết quả. Box đúng khi IoU ≥ 0,5. Ảnh không có ground truth cho class nào thì không tính class đó (xem mục 7: thiếu box thường là chưa gán nhãn).
+
+| Pipeline | Class | TP | FP | FN | Precision | Recall |
+|---|---|---|---|---|---|---|
+| chỉ bước 1 | label | 1 065 | 21 | 27 | 0,981 | 0,975 |
+| chỉ bước 1 | variety | 312 | 9 | 83 | 0,972 | 0,790 |
+| chỉ bước 1 | vintage | 439 | 4 | 39 | 0,991 | 0,918 |
+| bước 1 + 2 | variety | 343 | 11 | 52 | 0,969 | **0,868** |
+| bước 1 + 2 | vintage | 440 | 5 | 38 | 0,989 | 0,921 |
+
+(Box `label` của hai pipeline giống nhau, vì bước 2 không đổi nó.)
+
+**Đọc kết quả:**
+- Box nhãn đã giải xong: recall 0,975, mAP50 0,99.
+- Bước 2 có ích cho **variety**: tìm thêm 31 dòng (recall 0,79 → 0,87), precision gần như giữ nguyên. Đây là phần lợi thật sau khi đã tính cả lỗi của bước 1. Nó nhỏ hơn mức tăng mAP50 ở mục 4.1 (0,82 → 0,92), vì hai con số ấy đo trên hai tập khác nhau.
+- Với **vintage**, bước 2 gần như không thêm gì (recall 0,918 → 0,921). Dòng năm thường đã đủ to và rõ để bước 1 tự tìm.
+- 52 dòng variety vẫn bị bỏ sót. Chưa xem từng ảnh nên chưa biết bao nhiêu trong số đó là lỗi model, bao nhiêu là do nhiễu gán nhãn ở mục 7.
+
+**So với các run năm 2024** (split cũ bị rò rỉ: ba lần xáo trộn độc lập, 560 ảnh train của bước 2 là ảnh test của bước 1, ảnh trùng không được gom):
 
 | Model | Tập đo | label | variety | vintage |
 |---|---|---|---|---|
-| v8n, ảnh gốc | val 468 ảnh | 0,988 | 0,730 | 0,907 |
-| v8s, ảnh gốc | test 1 091 ảnh | 0,993 | 0,787 | 0,912 |
-| v8s, vùng nhãn đã cắt (bước 2) | val 451 vùng cắt | | **0,924** | **0,979** |
+| 2024, v8s, ảnh gốc | test 1 091 ảnh | 0,993 | 0,787 | 0,912 |
+| 2024, v8s, bước 2 | val 451 vùng cắt | | 0,924 | 0,979 |
+| 2026, v8s, ảnh gốc | test 1 092 ảnh | 0,992 | 0,822 | 0,920 |
+| 2026, v8s, bước 2 | test 655 vùng cắt | | 0,924 | 0,959 |
 
-**Đọc kết quả, kèm mức độ tin cậy:**
-- Box nhãn đã giải xong (mAP50 khoảng 0,99).
-- Variety là phần khó. Trên ảnh gốc, recall chỉ khoảng 0,55–0,71.
-- Bước 2 cải thiện rõ: variety 0,79 → 0,92, vintage 0,91 → 0,98.
-- **Nhưng các run này dùng split cũ, bị rò rỉ:** dữ liệu được chia ba lần với ba lần xáo trộn độc lập, nên 560 ảnh trong train của bước 2 lại là ảnh test của bước 1. Ảnh trùng cũng không được gom. Vì vậy hai dòng cuối không so sánh công bằng được với nhau, và con số thật có thể thấp hơn.
-- **Chưa làm:** train lại cả hai bước trên split theo nhóm ở mục 3 (cần GPU và dữ liệu nội bộ), rồi đo **toàn bộ pipeline** trên cùng một tập test: box variety mà API trả ra (bước 1 rồi bước 2) so với ground truth trên ảnh gốc.
+Dù split mới sạch hơn, bước 1 vẫn **tốt hơn** bản cũ, nhất là variety (+0,035 mAP50). Nhiều khả năng là nhờ sửa config (mục "So với bản cũ"): `box` về mặc định, `fliplr=0`. Chưa có thí nghiệm tách riêng từng thay đổi. Vintage của bước 2 thấp hơn bản cũ một chút (0,979 → 0,959), vì bản cũ đo trên val và có rò rỉ.
 
 ## 5. So với con số bên công bố mô hình
 
@@ -89,7 +123,7 @@ Dữ liệu cũng có nhiễu cần xử lý trước khi train lại:
 - Năm thành lập bị gán nhầm là vintage (ví dụ "FUNDADA EN 1877"): chỉ nên giữ năm trong khoảng hợp lý.
 - Nhiều nhãn có in giống nho nhưng không được gán `variety_rect`. Model học rằng dòng chữ đó là nền, nên recall variety bị kéo xuống.
 
-Vì những lý do này, hướng phát triển tiếp theo của dự án là dùng VLM (mục 1) để tìm và đọc chữ trong một bước.
+Vì những lý do này, sản phẩm thật dùng VLM (Qwen-VL, mục 1) để tìm và đọc chữ trong một bước, và kết quả đọc nhãn khá chuẩn. Bài này vẫn có giá trị như bài tập train detector: dựng dataset, chia split không rò rỉ, đo đúng cái mà API trả cho người dùng.
 
 ## So với bản cũ
 
@@ -101,4 +135,5 @@ Vì những lý do này, hướng phát triển tiếp theo của dự án là d
 | `fliplr=0.5` (mặc định) lật ngang ảnh có chữ | `fliplr=0` |
 | Bỏ mọi box variety/vintage chạm mép vùng cắt | Giữ box nếu ít nhất 60% nằm trong vùng cắt |
 | API Flask, chỉ bước 1, nạp model khi import, bắt mọi lỗi thành 500 | FastAPI hai bước, kiểm tra đầu vào, có test |
+| Chỉ có mAP của từng bước, đo trên các tập khác nhau | Thêm đo toàn bộ pipeline trên ảnh gốc của cùng tập test |
 | Weights `best.pt` nằm trong repo | Weights không đưa vào repo public |

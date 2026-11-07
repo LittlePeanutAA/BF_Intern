@@ -1,6 +1,7 @@
 """Dựng dataset YOLO từ bản ghi trong DB.
 
     python solution/yolo_data.py --records records.jsonl --images raw/ --out wine_data/
+    python solution/yolo_data.py --manifest manifest.jsonl --images raw/ --out wine_data/
 
 `records.jsonl`: mỗi dòng là một ảnh, xuất từ DB, dạng
     {"image": "abc.jpg", "label_rect": {"top": 10, "left": 20, "bottom": 80, "right": 70},
@@ -32,6 +33,14 @@ def make_manifest(records: list[dict], images_dir: Path) -> list[dict]:
         rows.append({"image": rec["image"], **{f"{k}_box": v for k, v in boxes.items()},
                      "group": group, "split": assign_split(group)})
     return rows
+
+
+def load_manifest(path: Path) -> list[dict]:
+    """Manifest đã có sẵn box YOLO và khoá nhóm (ví dụ do dự án chính dựng). Split được tính lại bằng
+    assign_split, để mọi dataset trong bài dùng cùng một quy tắc chia."""
+    rows = [json.loads(line) for line in path.read_text().splitlines() if line.strip()]
+    return [{"image": r["image"], **{f"{k}_box": r.get(f"{k}_box") for k in FULL_CLASSES},
+             "group": r["group"], "split": assign_split(r["group"])} for r in rows]
 
 
 def yolo_line(cls: int, box) -> str:
@@ -96,12 +105,17 @@ def write_crop_dataset(rows: list[dict], images_dir: Path, root: Path, pad: floa
 
 def main() -> None:
     parser = argparse.ArgumentParser()
-    parser.add_argument("--records", required=True, type=Path)
+    source = parser.add_mutually_exclusive_group(required=True)
+    source.add_argument("--records", type=Path, help="bản ghi xuất từ DB, toạ độ theo %%")
+    source.add_argument("--manifest", type=Path, help="manifest có sẵn box YOLO và cột group")
     parser.add_argument("--images", required=True, type=Path)
     parser.add_argument("--out", required=True, type=Path)
     args = parser.parse_args()
-    records = [json.loads(line) for line in args.records.read_text().splitlines() if line.strip()]
-    rows = make_manifest(records, args.images)
+    if args.manifest:
+        rows = load_manifest(args.manifest)
+    else:
+        records = [json.loads(line) for line in args.records.read_text().splitlines() if line.strip()]
+        rows = make_manifest(records, args.images)
     args.out.mkdir(parents=True, exist_ok=True)
     (args.out / "manifest.jsonl").write_text("".join(json.dumps(r) + "\n" for r in rows))
     print({s: sum(r["split"] == s for r in rows) for s in SPLITS})

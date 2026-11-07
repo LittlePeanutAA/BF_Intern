@@ -141,3 +141,24 @@ def test_predict_rejects_non_image(client):
 
 def test_health(client):
     assert client.get("/health").json() == {"status": "ok"}
+
+
+# ---------- đánh giá toàn pipeline ----------
+
+def test_pipeline_score(tmp_path):
+    from eval_pipeline import iou, score
+
+    assert iou((0, 0, 10, 10), (5, 0, 15, 10)) == pytest.approx(1 / 3)
+    Image.new("RGB", (200, 300)).save(tmp_path / "a.jpg")
+    rows = [{"image": "a.jpg", "label_box": (0.5, 0.5, 0.5, 0.5), "variety_box": (0.5, 0.2, 0.2, 0.05),
+             "vintage_box": None}]
+
+    def predict(img):
+        return [Detection("label", 0.9, (50, 75, 150, 225)),        # khớp hoàn toàn
+                Detection("variety", 0.8, (0, 280, 20, 300)),       # sai chỗ: vừa FN vừa FP
+                Detection("vintage", 0.7, (10, 10, 20, 20))]        # ảnh không có GT vintage: bỏ qua
+
+    result = score(predict, rows, tmp_path)
+    assert result["label"] == {"tp": 1, "fp": 0, "fn": 0, "precision": 1.0, "recall": 1.0}
+    assert result["variety"]["fn"] == 1 and result["variety"]["fp"] == 1
+    assert result["vintage"] == {"tp": 0, "fp": 0, "fn": 0, "precision": 0.0, "recall": 0.0}
